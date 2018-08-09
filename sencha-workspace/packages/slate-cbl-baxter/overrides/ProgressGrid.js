@@ -8,7 +8,7 @@ function getLevelShortName(level)  {
     if(level > 5){
         return "BA";
     }
-    return ["EN","PR","GB","AD","EX"][level];
+    return ["NE","EN","PR","GB","AD","EX"][level];
 
 };
 
@@ -23,6 +23,7 @@ function getLevelName(level){
         return "Beyond Assessment";
     }
     return [
+        "No Evidence",
         "Entering",
         "Progressing",
         "Graduation Benchmark",
@@ -98,8 +99,6 @@ Ext.define('Baxter.cbl.overrides.ProgressGrid', {
                                         '<td class="cbl-grid-progress-cell" data-student="{student.ID}">',
                                             '<span class="cbl-grid-progress-bar" style="width: 0%"></span>',
                                             '<span class="cbl-grid-progress-level"></span>',
-                                            '<span class="cbl-grid-progress-percent"></span>',
-                                            '<span class="cbl-grid-progress-average"></span>',
                                         '</td>',
                                     '</tpl>',
                                 '</tr>',
@@ -145,7 +144,7 @@ Ext.define('Baxter.cbl.overrides.ProgressGrid', {
         '<tpl for="skills">',
             '<tr class="cbl-grid-skill-row" data-skill="{skill.ID}">',
                 '<tpl for="students">',
-                    '<td class="cbl-grid-demos-cell <tpl if="studentCompetency">cbl-level-{studentCompetency.Level}</tpl>" data-student="{student.ID}">',
+                    '<td class="cbl-grid-demos-cell " data-student="{student.ID}">',
                         '<ul class="cbl-grid-demos">',
                             '<tpl for="demonstrations">',
                                 '<tpl if=".">',
@@ -153,6 +152,7 @@ Ext.define('Baxter.cbl.overrides.ProgressGrid', {
                                         ' data-demonstration="{DemonstrationID}"',
                                         '<tpl if="Override"> data-span="{[xcount - xindex + 1]}"</tpl>',
                                         ' class="',
+                                            ' level-color cbl-level-{DemonstratedLevel}',
                                             ' cbl-grid-demo',
                                             '<tpl if="Override">',
                                                 ' cbl-grid-demo-override',
@@ -182,5 +182,238 @@ Ext.define('Baxter.cbl.overrides.ProgressGrid', {
                 '</tpl>',
             '</tr>',
         '</tpl>'
-    ],    
+    ],   
+
+    loadStudentCompetencies: function(studentCompetencies, forceDirty) {
+        studentCompetencies = Ext.isArray(studentCompetencies) ? studentCompetencies : [studentCompetencies];
+        // eslint-disable-next-line vars-on-top
+        var me = this,
+            competenciesById,
+
+            studentCompetenciesLength = studentCompetencies.length,
+            studentCompetencyIndex, studentCompetency, competencyId, competencyData, studentId, node, competency,
+
+            dirtyNodes = [],
+            dirtyNodesLength, dirtyNodeIndex,
+
+            progressCellEl, count, average, level, effectiveDemonstrations, renderedLevel,
+            countDirty, averageDirty, levelDirty,
+            percentComplete, demonstrationsRequired,
+
+            averageFormat = me.getAverageFormat(),
+            progressFormat = me.getProgressFormat(),
+
+            studentSkills, studentSkillsLength, studentSkillIndex, studentSkill, demonstrationsCellEl,
+            skillId, skill, demonstrations, renderedDemonstrations, demonstrationBlockEls,
+            demonstrationsLength, demonstrationIndex, demonstration,
+            renderedDemonstrationsLength, renderedDemonstration, renderedDemonstrationRating, demonstrationBlockEl,
+            demonstrationRating, demonstrationOverride, demonstrationId,
+            demonstrationRatingDirty, demonstrationOverrideDirty,
+            demonstrationHtml;
+
+
+        if (!me.rendered) {
+            me.on('afterrender', function() {
+                me.loadStudentCompetencies(studentCompetencies);
+            }, me, { single: true });
+            return;
+        }
+
+
+        // reference competencies+students tree from main render tree
+        competenciesById = me.getData().competenciesById;
+
+
+        // pass 1: sort StudentCompetency records into competencies+students tree and queue those needing re-render
+        for (studentCompetencyIndex = 0; studentCompetencyIndex < studentCompetenciesLength; studentCompetencyIndex++) {
+            studentCompetency = studentCompetencies[studentCompetencyIndex];
+            competencyId = studentCompetency.get('CompetencyID');
+            competencyData = competenciesById[competencyId];
+
+            // skip StudentCompetency if not found in loaded competencies
+            if (!competencyData) {
+                continue;
+            }
+
+            studentId = studentCompetency.get('StudentID');
+            node = competencyData.studentsById[studentId];
+            level = studentCompetency.get('Level');
+
+            node.studentCompetencies[level] = studentCompetency;
+
+            if (level > node.maxLevel || forceDirty) {
+                node.maxLevel = level;
+                node.dirty = true;
+                dirtyNodes.push(node);
+            }
+        }
+
+
+        // pass 2: update dirty nodes
+        for (dirtyNodesLength = dirtyNodes.length, dirtyNodeIndex = 0; dirtyNodeIndex < dirtyNodesLength; dirtyNodeIndex++) {
+            node = dirtyNodes[dirtyNodeIndex];
+            competency = node.competency;
+
+
+            // the same node could be in the queue more than once, but only needs to be processed once
+            if (!node.dirty) {
+                continue;
+            }
+
+            node.dirty = false;
+
+
+            studentCompetency = node.studentCompetencies[node.maxLevel];
+            progressCellEl = node.progressCellEl;
+
+            count = studentCompetency.get('demonstrationsComplete');
+            average = studentCompetency.get('demonstrationsAverage');
+            level = studentCompetency.get('Level');
+            effectiveDemonstrations = studentCompetency.get('effectiveDemonstrationsData');
+            renderedLevel = node.renderedLevel;
+
+            countDirty = count != node.renderedCount;
+            averageDirty = average != node.renderedAverage;
+            levelDirty = level != renderedLevel;
+            demonstrationsRequired = competency.totalDemonstrationsRequired[level] || competency.totalDemonstrationsRequired.default;
+
+            if (countDirty || averageDirty) {
+                percentComplete = 100 * (count || 0) / demonstrationsRequired;
+                progressCellEl.toggleCls('is-average-low', percentComplete >= 50 && average !== null && average < (level + competency.minimumAverageOffset)); // eslint-disable-line no-extra-parens
+            }
+
+            if (countDirty) {
+                node.progressBarEl.setStyle('width', isNaN(percentComplete) ? '0' : Math.round(percentComplete) + '%');
+                node.renderedCount = count;
+            }
+
+            if (levelDirty) {
+                if (renderedLevel) {
+                    progressCellEl.removeCls('cbl-level-'+renderedLevel);
+                }
+
+                progressCellEl.addCls('cbl-level-'+level);
+
+                node.progressLevelEl.update(getLevelShortName(level));
+                node.renderedLevel = level;
+            }
+
+
+            // loop through rendered skill rows (empty if not yet expanded) and update demonstration blocks
+            studentSkills = node.skills;
+            studentSkillsLength = studentSkills.length;
+            studentSkillIndex = 0;
+            for (; studentSkillIndex < studentSkillsLength; studentSkillIndex++) {
+                studentSkill = studentSkills[studentSkillIndex];
+                skill = studentSkill.skill;
+                skillId = skill.getId();
+                console.log(skillId);
+                demonstrations = Ext.Array.clone(effectiveDemonstrations[skillId] || []); // TODO only use of skillId?
+
+                if (levelDirty) {
+                    demonstrationsCellEl = studentSkill.demonstrationsCellEl;
+
+                    if (renderedLevel) {
+                        demonstrationsCellEl.removeCls('cbl-level-'+renderedLevel);
+                    }
+
+                    demonstrationsCellEl.addCls('cbl-level-'+level);
+                }
+
+                // fill demonstrations array with undefined items
+                demonstrationsLength = demonstrations.length = skill.getTotalDemonstrationsRequired(level);
+
+                renderedDemonstrations = studentSkill.demonstrations;
+                renderedDemonstrationsLength = renderedDemonstrations.length;
+                demonstrationBlockEls = studentSkill.demonstrationBlockEls;
+
+                demonstrationIndex = 0;
+                for (; demonstrationIndex < demonstrationsLength; demonstrationIndex++) {
+                    // gather information about incoming demonstration data
+                    demonstration = demonstrations[demonstrationIndex];
+                    demonstrationRating = demonstration ? demonstration.DemonstratedLevel : null;
+                    demonstrationOverride = demonstration ? demonstration.Override : null;
+                    demonstrationId = demonstration ? demonstration.DemonstrationID : null;
+
+                    // gather information about previous render
+                    if (demonstrationIndex <= renderedDemonstrationsLength) {
+                        renderedDemonstration = renderedDemonstrations[demonstrationIndex];
+                        renderedDemonstrationRating = renderedDemonstration ? renderedDemonstration.DemonstratedLevel : null;
+                    } else {
+                        renderedDemonstration = null;
+                        renderedDemonstrationRating = null;
+                    }
+
+                    // get or create block element
+                    demonstrationBlockEl = demonstrationBlockEls.item(demonstrationIndex);
+                    if (!demonstrationBlockEl) {
+                        demonstrationBlockEl = studentSkill.demonstrationsListEl.appendChild({
+                            tag: 'li',
+                            cls: 'cbl-grid-demo'
+                        }, false);
+                        demonstrationBlockEls.add(demonstrationBlockEl);
+                    }
+
+                    // detect changes from previous rendering
+                    if (renderedDemonstration) {
+                        demonstrationRatingDirty = renderedDemonstrationRating != demonstrationRating;
+                        demonstrationOverrideDirty = renderedDemonstration.Override != demonstrationOverride;
+                    } else {
+                        demonstrationRatingDirty = true;
+                        demonstrationOverrideDirty = true;
+                    }
+
+
+                    // update bits of infos
+                    if (renderedDemonstration) {
+                        // TODO: use a global template
+                        if (demonstrationOverride) {
+                            demonstrationHtml = '<i class="fa fa-check"></i>';
+                        } else {
+                            demonstrationHtml = getLevelShortName(demonstrationRating);
+                        }
+                    } else {
+                        demonstrationHtml = "";
+                    }
+
+
+                    demonstrationBlockEl.update(demonstrationHtml);
+                    demonstrationBlockEl.toggleCls('cbl-grid-demo-counted', Boolean(demonstrationRating || demonstrationOverride));
+
+                    if (demonstrationRatingDirty) {
+                        demonstrationBlockEl.toggleCls('cbl-level-' + renderedDemonstrationRating, false);                        
+                        demonstrationBlockEl.toggleCls('cbl-level-' + demonstrationRating, true);                        
+                        demonstrationBlockEl.toggleCls('cbl-grid-demo-missing', demonstrationRating === 0 && !demonstrationOverride);
+                    }
+
+                    if (demonstrationOverrideDirty) {
+                        demonstrationBlockEl.toggleCls('cbl-level-' + renderedDemonstrationRating, false);                        
+                        demonstrationBlockEl.toggleCls('cbl-level-' + demonstrationRating, true);                        
+
+                        demonstrationBlockEl.toggleCls('cbl-grid-demo-override', demonstrationOverride);
+                        demonstrationBlockEl.set({
+                            'data-span': demonstrationOverride ? demonstrationsLength - demonstrationIndex : ''
+                        });
+                    }
+
+                    if (!renderedDemonstration || renderedDemonstration.DemonstrationID != demonstrationId) {
+                        demonstrationBlockEl.set({
+                            'data-demonstration': demonstrationId || ''
+                        });
+                    }
+
+                    // remove any existing subsequent blocks and skip rest of loop
+                    if (demonstrationOverride || demonstrationIndex + 1 >= demonstrationsLength) {
+                        while (demonstrationBlockEls.getCount() > demonstrationIndex + 1) {
+                            demonstrationBlockEls.removeElement(demonstrationIndex + 1, true);
+                        }
+                        break;
+                    }
+                }
+
+                // update reference for rendered demonstrations data to new data
+                studentSkill.demonstrations = demonstrations;
+            }
+        }
+    },
 });

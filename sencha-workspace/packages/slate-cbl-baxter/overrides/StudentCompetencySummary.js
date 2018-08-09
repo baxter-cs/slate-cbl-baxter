@@ -16,9 +16,17 @@ Ext.define('Baxter.cbl.overrides.StudentCompetencySummary', {
 
       '<div id="{id}-meterEl" data-ref="meterEl" class="cbl-progress-meter">',
       '</div>',
-
       '<div class="stats-ct">',
-      '</div>'
+      '</div>',
+      '<div class="cbl-grid-legend">',
+        '<span class="cbl-grid-legend-label">Legend:&ensp;</span>',
+        '<span class="cbl-grid-legend-item level-color cbl-level-1">EN</span>',
+        '<span class="cbl-grid-legend-item level-color cbl-level-2">PR</span>',
+        '<span class="cbl-grid-legend-item level-color cbl-level-3">GB</span>',
+        '<span class="cbl-grid-legend-item level-color cbl-level-4">AD</span>',
+        '<span class="cbl-grid-legend-item level-color cbl-level-5">EX</span>',
+        '<span class="cbl-grid-legend-item level-color cbl-level-6">BA</span>',
+      '</div>',      
     ],
 
     initRenderData: function() {
@@ -45,7 +53,7 @@ Ext.define('Baxter.cbl.overrides.StudentCompetencySummary', {
         if(level > 5){
             return "BA";
         }
-        return ["EN","PR","GB","AD","EX"][level];
+        return ["NE","EN","PR","GB","AD","EX"][level];
 
     },
 
@@ -61,6 +69,7 @@ Ext.define('Baxter.cbl.overrides.StudentCompetencySummary', {
             return "Beyond Assessment";
         }
         return [
+            "No Evidence",
             "Entering",
             "Progressing",
             "Graduation Benchmark",
@@ -71,11 +80,11 @@ Ext.define('Baxter.cbl.overrides.StudentCompetencySummary', {
         var me = this;
 
         if (oldLevel) {
-            me.removeCls('cbl-level-' + oldLevel);
+           // me.removeCls('cbl-level-' + oldLevel);
         }
 
         if (newLevel) {
-            me.addCls('cbl-level-' + newLevel);
+          //  me.addCls('cbl-level-' + newLevel);
         }
 
     },

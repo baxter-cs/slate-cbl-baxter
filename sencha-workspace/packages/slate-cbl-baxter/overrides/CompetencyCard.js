@@ -8,7 +8,7 @@ function getLevelShortName(level)  {
     if(level > 5){
         return "BA";
     }
-    return ["EN","PR","GB","AD","EX"][level];
+    return ["NE","EN","PR","GB","AD","EX"][level];
 
 };
 
@@ -23,6 +23,7 @@ function getLevelName(level){
         return "Beyond Assessment";
     }
     return [
+        "No Evidence",
         "Entering",
         "Progressing",
         "Graduation Benchmark",
@@ -76,6 +77,8 @@ Ext.define('Baxter.cbl.overrides.StudentCompetencies', {
                                   '</tpl>',
                                   '<tpl if="DemonstratedLevel || Override">',
                                       ' cbl-skill-demo-counted',
+                                      ' cbl-level-{DemonstratedLevel}',
+                                      ' level-color',
                                   '<tpl else>',
                                       ' cbl-skill-demo-uncounted',
                                   '</tpl>',
@@ -113,6 +116,21 @@ Ext.define('Baxter.cbl.overrides.StudentCompetencies', {
             levelShortName: getLevelShortName(me.getLevel()),
             levelName: getLevelName(me.getLevel())
         });
-    }
+    },
+        updateLevel: function(newLevel, oldLevel) {
+        var me = this;
+
+        if (oldLevel) {
+            me.removeCls('cbl-level-' + oldLevel);
+        }
+
+        if (newLevel) {
+            me.addCls('cbl-level-' + newLevel);
+        }
+
+        if (me.rendered) {
+            me.meterLevelEl.update(newLevel ? 'Y'+(newLevel - 8) : '');
+        }
+    },
 
 }); 

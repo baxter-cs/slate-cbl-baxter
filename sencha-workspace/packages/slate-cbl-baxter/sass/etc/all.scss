@@ -1,3 +1,4 @@
+
 $level-colors: dynamic(
     #d94181, // 1
     #ffa200, // 2
@@ -57,3 +58,64 @@ $level-colors-dark: dynamic(
     #888, // 11
     #888 // 12
 );
+
+$g: 'cbl-grid';
+
+
+.#{$g}-legend-item {
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: .25em;
+    padding: .25em .5em;
+    width: 2.5em;
+}
+
+.#{$g}-progress-percent {
+    alpha: 0;
+}
+.#{$g}-progress-average {
+    display: none;
+}
+
+@for $n from 1 through length($level-colors) {
+    .cbl-level-#{$n} {
+        $level-color:        nth($level-colors,        $n);
+        $level-color-light:  nth($level-colors-light,  $n);
+        $level-color-medium: nth($level-colors-medium, $n);
+        $level-color-dark:   nth($level-colors-dark,   $n);
+
+        &.level-color {
+            @extend .level-n;
+            background-color: $level-color !important;
+        }
+
+        &.#{$g}-progress-cell {
+            background-color: $level-color-light !important;
+        }
+
+        .#{$g}-progress-bar {
+            @include background-image(linear-gradient(
+                $level-color,
+                $level-color-dark
+            ));
+        }
+
+        .#{$g}-demo {
+            &:hover,
+            &:focus {
+                box-shadow: inset 0 0 0 2px $level-color-light;
+            }
+
+            &.#{$g}-demo-missing {
+                background-color: mix($text-color, $page-bg-color, 17%);
+                color: mix($text-color, $page-bg-color, 67%);
+                font-weight: normal;
+                text-shadow: none;
+            }
+
+            &.#{$g}-demo-counted {
+                background-color: $level-color-medium;
+            }
+        }
+    }
+}
