@@ -55,8 +55,8 @@ Ext.define('Baxter.cbl.override.Slider', {
         level: null,
 
         minRating: 1,
-        maxRating: 5,
-        menuRatings: [6, 0],
+        maxRating: 6,
+        menuRatings: [0],
         removable: false
     },
 
