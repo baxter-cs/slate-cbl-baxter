@@ -30,7 +30,6 @@ function getLevelName(level){
         "Advancing",
         "Excelling"][level];
 }; 
-
 Ext.define('Baxter.cbl.overrides.ProgressGrid', {
     override: 'SlateDemonstrationsTeacher.view.ProgressGrid',    
 
@@ -279,7 +278,7 @@ Ext.define('Baxter.cbl.overrides.ProgressGrid', {
 
             if (countDirty || averageDirty) {
                 percentComplete = 100 * (count || 0) / demonstrationsRequired;
-                progressCellEl.toggleCls('is-average-low', percentComplete >= 50 && average !== null && average < (level + competency.minimumAverageOffset)); // eslint-disable-line no-extra-parens
+                //progressCellEl.toggleCls('is-average-low', percentComplete >= 50 && average !== null && average < (level + competency.minimumAverageOffset)); // eslint-disable-line no-extra-parens
             }
 
             if (countDirty) {
@@ -355,27 +354,20 @@ Ext.define('Baxter.cbl.overrides.ProgressGrid', {
                     }
 
                     // detect changes from previous rendering
+                    // update bits of infos
                     if (renderedDemonstration) {
+                        if (demonstrationOverride) {
+                            demonstrationHtml = '<i class="fa fa-check"></i>';
+                        }
                         demonstrationRatingDirty = renderedDemonstrationRating != demonstrationRating;
                         demonstrationOverrideDirty = renderedDemonstration.Override != demonstrationOverride;
                     } else {
                         demonstrationRatingDirty = true;
                         demonstrationOverrideDirty = true;
+
                     }
-
-
-                    // update bits of infos
-                    if (renderedDemonstration) {
-                        // TODO: use a global template
-                        if (demonstrationOverride) {
-                            demonstrationHtml = '<i class="fa fa-check"></i>';
-                        } else {
-                            demonstrationHtml = getLevelShortName(demonstrationRating);
-                        }
-                    } else {
-                        demonstrationHtml = "";
-                    }
-
+                            
+                    demonstrationHtml = demonstrationRating? getLevelShortName(demonstrationRating) : "";
 
                     demonstrationBlockEl.update(demonstrationHtml);
                     demonstrationBlockEl.toggleCls('cbl-grid-demo-counted', Boolean(demonstrationRating || demonstrationOverride));
