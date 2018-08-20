@@ -8,5 +8,6 @@ Git::$repositories['slate-cbl-baxter'] = [
         'html-templates',
         'site-root',
         'php-config',
+        'php-classes'
     ]
 ];
