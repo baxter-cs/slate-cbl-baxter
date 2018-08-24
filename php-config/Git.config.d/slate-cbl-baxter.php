@@ -13,7 +13,7 @@ Git::$repositories['slate-cbl-baxter'] = [
                 '#^/Tasks/ExperienceTask\.config\.d/fields\.php$#'
             ]
         ],
-        'sencha-workspace/packages/slate-cbl-baxxter',
+        'sencha-workspace/packages/slate-cbl-baxter',
         'site-root/baxter'
     ]
 ];
