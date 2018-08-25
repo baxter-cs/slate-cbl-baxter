@@ -1,0 +1,3 @@
+[submodule "sencha-workspace/extjs"]
+	path = sencha-workspace/extjs
+	url = https://github.com/JarvusInnovations/extjs.git
