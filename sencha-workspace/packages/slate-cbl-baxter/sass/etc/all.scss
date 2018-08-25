@@ -59,7 +59,7 @@ $level-colors-dark: dynamic(
     #888 // 12
 );
 
-$g: 'cbl-grid';
+$g: dynamic('cbl-grid');
 
 
 .#{$g}-legend-item {
