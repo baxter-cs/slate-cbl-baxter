@@ -21,6 +21,10 @@
      *
      */
     "frameworks": {
+        "ext": {
+            "path": "extjs",
+            "version": "6.2.0.981"
+        }
     },
 
     /**
