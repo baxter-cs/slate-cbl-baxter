@@ -213,6 +213,7 @@ Ext.define('Baxter.cbl.overrides.ProgressGrid', {override:'SlateDemonstrationsTe
     }
   }
 }});
+Ext.define('Baxter.cbl.overrides.RecentProgress', {override:'SlateDemonstrationsStudent.view.RecentProgress', title:'Recent Progress', cls:'slate-tasks-student-recentactivity', tpl:['\x3cdiv class\x3d"table-ct"\x3e', '\x3cdiv\x3eTemporarily Disabled\x3c/div\x3e', '\x3c/div\x3e']});
 function getLevelShortName(level) {
   if (level <= 0) {
     return 'NE';
