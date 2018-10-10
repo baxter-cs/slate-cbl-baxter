@@ -48,20 +48,3 @@ Ext.define('Baxter.cbl.override.Thumb', {
     ],
 });
 
-Ext.define('Baxter.cbl.override.Slider', {
-    override: 'Slate.cbl.field.ratings.Slider',
-    config: {
-        skill: null,
-        level: null,
-
-        minRating: 1,
-        maxRating: 6,
-        menuRatings: [0],
-        removable: false
-    },
-
-
-}, function(Slider) {
-    // make this class statically observable so instances can monitor other instances for tip showing
-    Ext.util.Observable.observe(Slider);
-});
