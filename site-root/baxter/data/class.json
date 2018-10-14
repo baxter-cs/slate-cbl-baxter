@@ -1,4 +1,50 @@
 {
+  "EP Calculus" : {
+    "course (year)" : "EP Calculus",
+    "content area (year)" : "MAT",
+    "division" : 3,
+    "revised" : false,
+    "terminate" : ""
+  },  
+  "EP Calculus-based Physics" : {
+    "course (year)" : "EP Calculus-based Physics",
+    "content area (year)" : "SCI",
+    "division" : 3,
+    "revised" : false,
+    "terminate" : ""
+  },  
+
+  "Differential Equations" : {
+    "course (year)" : "Differential Equations",
+    "content area (year)" : "MAT",
+    "division" : 3,
+    "revised" : false,
+    "terminate" : ""
+  }, 
+  "Linear Algebra" : {
+    "course (year)" : "Linear Algebra",
+    "content area (year)" : "MAT",
+    "division" : 3,
+    "revised" : false,
+    "terminate" : ""
+  }, 
+  "EP Calculus-based Physics" : {
+    "course (year)" : "EP Calculus-based Physics",
+    "content area (year)" : "MAT",
+    "division" : 3,
+    "revised" : false,
+    "terminate" : ""
+  }, 
+  "Intensive Mandarin" : {
+    "course (year)" : "Intensive Mandarin",
+    "content area (year)" : "WL",
+    "division" : 3,
+    "revised" : false,
+    "terminate" : ""
+  }, 
+
+
+
   "1" : {
     "course (year)" : 1,
     "content area (year)" : "2013-2014",
@@ -923,6 +969,20 @@
     "transcript name" : "Constitution: Students' Rights",
     "revised" : false,
     "terminate" : ""
+  },
+  "Constitution: Debate & Discuss" : {
+    "course (year)" : "Constitution: Debate & Discuss",
+    "content area (year)" : "HUM",
+    "division" : 2,
+    "transcript name" : "Constitution: Debate & Discuss",
+    "revised" : false,
+    "terminate" : ""
+  },
+  "University of Maine: Introduction to World Politics" : {
+    "division" : 3
+  },
+  "AP European History" : {
+    "division" : 2
   },
   "Contemporary American Lit" : {
     "course (year)" : "Contemporary American Lit",

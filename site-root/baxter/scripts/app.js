@@ -18,8 +18,12 @@ var deptOrdered = [
 
 
 var otherClasses = {
-  "Digital Photography I" : {division : 1}
+  "Digital Photography I" : {division : 1},  
+  "University of Maine: Intro to World Politics" : {division : 3},
+  "AP European History": {division: 3},
 }
+
+
 $(function() {  
   
 
@@ -100,7 +104,7 @@ function getCourseDivision(course){
   var key = course["Course Title"];
   var myClass = classInfo[key];
   if(typeof myClass === "undefined"){
-    if(key.match(/College/)){
+    if(key.match(/College/ || key.match(/^AP /))){
       return 4;
     }
     if(typeof(course["Transfer"]) !== 'undefined'
@@ -217,7 +221,9 @@ function renderStudentInfo(data){
   $("#studentAddress").html([data["Street Address"],data["City"],data["State"],data["Zip"]].join(" "));
   ;
   $("#studentBirthdate").html(m + "/" + d + "/" + y);
-  //$("#graduationDate").html("Graduation<br/>" + 6 + "/" + 4 + "/" + 2017);
+  if(false && studentYear >= 4){  
+      $("#graduationDate").html(6 + "/" + 2 + "/" + 2018);
+  }
   $("#studentGpa").html(parseFloat(data["GPA"]).toPrecision(2));
   $("#p2info").html($("#p1info").html());
 
