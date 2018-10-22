@@ -1,0 +1,140 @@
+{
+  "Standards" : {
+    "Aesthetics & Meaning" : {
+      "Standard" : "Aesthetics & Meaning",
+      "Department" : "DFE"
+    },
+    "Algebraic Reasoning" : {
+      "Standard" : "Algebraic Reasoning",
+      "Department" : "MATH"
+    },
+    "Analyze and Optimize Solutions" : {
+      "Standard" : "Analyze and Optimize Solutions",
+      "Department" : "DFE"
+    },
+    "CAD" : {
+      "Standard" : "CAD",
+      "Department" : "DFE"
+    },
+    "Civics & Government" : {
+      "Standard" : "Civics & Government",
+      "Department" : "HUM"
+    },
+    "Climate Change" : {
+      "Standard" : "Climate Change",
+      "Department" : "SCI"
+    },
+    "Computer Science" : {
+      "Standard" : "Computer Science",
+      "Department" : "DFE"
+    },
+    "Decision-Making and Goal-Setting Skills" : {
+      "Standard" : "Decision-Making and Goal-Setting Skills",
+      "Department" : "OTHER"
+    },
+    "Define Problems" : {
+      "Standard" : "Define Problems",
+      "Department" : "DFE"
+    },
+    "Design" : {
+      "Standard" : "Design",
+      "Department" : "DFE"
+    },
+    "Develop Solutions" : {
+      "Standard" : "Develop Solutions",
+      "Department" : "DFE"
+    },
+    "Economics" : {
+      "Standard" : "Economics",
+      "Department" : "HUM"
+    },
+    "Engineering" : {
+      "Standard" : "Engineering",
+      "Department" : "DFE"
+    },
+    "Fabrication" : {
+      "Standard" : "Fabrication",
+      "Department" : "DFE"
+    },
+    "Forces and Motion" : {
+      "Standard" : "Forces and Motion",
+      "Department" : "SCI"
+    },
+    "Geometry" : {
+      "Standard" : "Geometry",
+      "Department" : "MATH"
+    },
+    "Health Skills & Concepts" : {
+      "Standard" : "Health Skills & Concepts",
+      "Department" : "OTHER"
+    },
+    "Heredity and Evolution" : {
+      "Standard" : "Heredity and Evolution",
+      "Department" : "SCI"
+    },
+    "Historical Context" : {
+      "Standard" : "Historical Context",
+      "Department" : "HUM"
+    },
+    "Interpersonal Communication" : {
+      "Standard" : "Interpersonal Communication",
+      "Department" : "WL"
+    },
+    "Interpretive Communication" : {
+      "Standard" : "Interpretive Communication",
+      "Department" : "WL"
+    },
+    "Matter and Energy" : {
+      "Standard" : "Matter and Energy",
+      "Department" : "SCI"
+    },
+    "Music" : {
+      "Standard" : "Music",
+      "Department" : "DFE"
+    },
+    "Number and Quantity" : {
+      "Standard" : "Number and Quantity",
+      "Department" : "MATH"
+    },
+    "Physical Fitness Activities and Knowledge" : {
+      "Standard" : "Physical Fitness Activities and Knowledge",
+      "Department" : "OTHER"
+    },
+    "Presentational Communication" : {
+      "Standard" : "Presentational Communication",
+      "Department" : "WL"
+    },
+    "Reading" : {
+      "Standard" : "Reading",
+      "Department" : "HUM"
+    },
+    "Research" : {
+      "Standard" : "Research",
+      "Department" : "HUM"
+    },
+    "Science and Math Practices" : {
+      "Standard" : "Science and Math Practices",
+      "Department" : "SCI"
+    },
+    "Speaking & Listening" : {
+      "Standard" : "Speaking & Listening",
+      "Department" : "HUM"
+    },
+    "Statistics and Probability" : {
+      "Standard" : "Statistics and Probability",
+      "Department" : "MATH"
+    },
+    "Theater" : {
+      "Standard" : "Theater",
+      "Department" : "DFE"
+    },
+    "Visual Arts" : {
+      "Standard" : "Visual Arts",
+      "Department" : "DFE"
+    },
+    "Writing" : {
+      "Standard" : "Writing",
+      "Department" : "HUM"
+    }
+  }
+}
