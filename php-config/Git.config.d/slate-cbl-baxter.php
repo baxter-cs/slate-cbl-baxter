@@ -15,7 +15,8 @@ Git::$repositories['slate-cbl-baxter'] = [
             ]
         ],
         'sencha-workspace/packages/slate-cbl-baxter',
-        'site-root/baxter'
+        'site-root/baxter',
+        'html-templates/baxter'
     ]
 ];
 
