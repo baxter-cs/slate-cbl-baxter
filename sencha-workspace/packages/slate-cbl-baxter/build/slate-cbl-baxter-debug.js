@@ -271,9 +271,6 @@ function getLevelName(level) {
   return ['No Evidence', 'Entering', 'Progressing', 'Graduation Benchmark', 'Advancing', 'Excelling'][level];
 }
 Ext.define('Baxter.cbl.override.Thumb', {override:'Slate.cbl.field.ratings.Thumb', contentTpl:['\x3ctpl if\x3d"value \x3d\x3d\x3d null"\x3e', '\x3csmall class\x3d"muted"\x3eN/A\x3c/small\x3e', '\x3ctpl elseif\x3d"value \x3d\x3d\x3d 0"\x3e', 'NE', '\x3ctpl else\x3e', '{[getLevelShortName(values.value)]}', '\x3c/tpl\x3e']});
-Ext.define('Baxter.cbl.override.Slider', {override:'Slate.cbl.field.ratings.Slider', config:{skill:null, level:null, minRating:1, maxRating:6, menuRatings:[0], removable:false}}, function(Slider) {
-  Ext.util.Observable.observe(Slider);
-});
 Ext.define('Baxter.cbl.overrides.StudentCompetencySummary', {override:'SlateDemonstrationsStudent.view.CompetenciesSummary', config:{contentAreaTitle:null, level:null, missed:null}, renderTpl:['\x3cheader class\x3d"slate-simplepanel-header"\x3e', '\x3cdiv class\x3d"slate-simplepanel-title"\x3eMy \x3cspan id\x3d"{id}-contentAreaTitleEl" data-ref\x3d"contentAreaTitleEl"\x3e{contentAreaTitle}\x3c/span\x3e Competencies\x3c/div\x3e', '\x3c/header\x3e', '\x3cdiv id\x3d"{id}-meterEl" data-ref\x3d"meterEl" class\x3d"cbl-progress-meter"\x3e', 
 '\x3c/div\x3e', '\x3cdiv class\x3d"stats-ct"\x3e', '\x3c/div\x3e', '\x3cdiv class\x3d"cbl-grid-legend"\x3e', '\x3cspan class\x3d"cbl-grid-legend-label"\x3eLegend:\x26ensp;\x3c/span\x3e', '\x3cspan class\x3d"cbl-grid-legend-item level-color cbl-level-1"\x3eEN\x3c/span\x3e', '\x3cspan class\x3d"cbl-grid-legend-item level-color cbl-level-2"\x3ePR\x3c/span\x3e', '\x3cspan class\x3d"cbl-grid-legend-item level-color cbl-level-3"\x3eGB\x3c/span\x3e', '\x3cspan class\x3d"cbl-grid-legend-item level-color cbl-level-4"\x3eAD\x3c/span\x3e', 
 '\x3cspan class\x3d"cbl-grid-legend-item level-color cbl-level-5"\x3eEX\x3c/span\x3e', '\x3cspan class\x3d"cbl-grid-legend-item level-color cbl-level-6"\x3eBA\x3c/span\x3e', '\x3c/div\x3e'], initRenderData:function() {
@@ -317,4 +314,16 @@ Ext.define('Baxter.cbl.overrides.StudentCompetencySummary', {override:'SlateDemo
   return;
 }, updateGrowth:function(growth) {
   return;
+}});
+Ext.define('Baxter.cbl.override.TaskRater', {override:'SlateTasksTeacher.view.TaskRater', config:{readOnly:null}, updateStudentTask:function(studentTask) {
+  var me = this, form = me.down('slate-modalform'), ratingsView = me.down('slate-ratingview'), commentsField = form.down('slate-commentsfield'), submissionsCmp = form.down('slate-tasks-submissions'), groupedSkills = studentTask.getTaskSkillsGroupedByCompetency();
+  if (studentTask.get('DueDate')) {
+    form.down('[name\x3dDueDate]').setValue(studentTask.get('DueDate'));
+  }
+  form.down('[name\x3dExpirationDate]').setValue(studentTask.get('ExpirationDate'));
+  form.down('[name\x3dStudentFullName]').setValue(studentTask.get('Student').FirstName + ' ' + studentTask.get('Student').LastName);
+  form.down('#student-attachments').setAttachments(studentTask.get('Attachments'));
+  commentsField.setRecord(studentTask);
+  submissionsCmp.setData(studentTask.get('Submissions'));
+  ratingsView.setData({ratings:[0, 1, 2, 3, 4, 5, 6], competencies:groupedSkills});
 }});
