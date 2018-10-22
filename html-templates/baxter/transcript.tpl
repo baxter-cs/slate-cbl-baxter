@@ -121,7 +121,7 @@
                     </select>
 
                 </div>  
-                <div>Reference Academic Year (beginning year only): <input name="currentYear" value="2017"></div>
+                <div>Reference Academic Year (beginning year only): <input name="currentYear" value="2018"></div>
                 <input type="submit" name="submitTranscript" value="Generate Transcript">
             </div>
             <div>

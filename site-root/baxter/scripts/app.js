@@ -221,8 +221,8 @@ function renderStudentInfo(data){
   $("#studentAddress").html([data["Street Address"],data["City"],data["State"],data["Zip"]].join(" "));
   ;
   $("#studentBirthdate").html(m + "/" + d + "/" + y);
-  if(false && studentYear >= 4){  
-      $("#graduationDate").html(6 + "/" + 2 + "/" + 2018);
+  if(studentYear >= 4){  
+     // $("#graduationDate").html(6 + "/" + 2 + "/" + 2018);
   }
   $("#studentGpa").html(parseFloat(data["GPA"]).toPrecision(2));
   $("#p2info").html($("#p1info").html());
@@ -427,29 +427,28 @@ function fixDesignProcess(standardsData){
     return;
   }
   fixed = true;
-  var dp = getStandardDataByName("Define Problems", standardsData);
-  var ds = getStandardDataByName("Develop Solutions", standardsData);
-  var ao = getStandardDataByName("Analyze and Optimize Solutions", standardsData);
+//  var dp = getStandardDataByName("Define Problems", standardsData);
+ // var ds = getStandardDataByName("Develop Solutions", standardsData);
+ // var ao = getStandardDataByName("Analyze and Optimize Solutions", standardsData);
   var designProReal = getStandardDataByName("Design", standardsData);
   var levels = [];
-  for(var i = 0; i < 4; i++){
-    var dpLevel = dp.levels[i];
-    var dsLevel = ds.levels[i];
-    var aoLevel = ao.levels[i];
-    var dprealLevel = designProReal.levels[i];
-    var compVal = dropLowest([dpLevel, dsLevel, aoLevel]);
-    console.log(dprealLevel + "DESIGN");
-    var storeVal = (Math.max(dprealLevel, compVal));
-    levels.push(compVal);
-  }
-  dp.name = "Design Process";
-  ds.name = "";
-  ao.name = "";
-  dp.levels = levels;
-  ds.levels = [0,0,0,0];
-  ao.levels = [0,0,0,0];
-  dp.shouldRender = true;
-  return standardsData;
+ /  var compVal = dprealLevel;
+      for(var i = 0; i < 4; i++){
+    //      if(dp){
+    //        var dpLevel = dp.levels[i];
+    //        var dsLevel = ds? ds.levels[i] : 0;
+     //       var aoLevel = ao? ao.levels[i] : 0;        
+     //       compVal = dropLowest([dpLevel, dsLevel, aoLevel]);
+     //     } else {          
+              dp = designProReal;
+          }
+         var dprealLevel = designProReal.levels[i];
+          levels.push(dprealLevel);
+      }
+      designProReal.name = "Design Process";
+      designProReal.shouldRender = true;
+      designProReal.levels = levels;
+      return standardsData;
 }
 
 function renderStandards(standardsData, dept) {
@@ -571,7 +570,7 @@ function standardData(rawData){
     if(this.name == "Design Process" || this.name == "Aesthetics & Meaning"){
       this.shouldRender = true;
     }
-    if(this.name == "Design"){
+    if(this.name == "Design Process"){
       this.shouldRender = false;
     }
   }
@@ -592,6 +591,7 @@ function makeStandardBar(standardData){
   standardBar.append("<div class='standardName'>" + standardData.shortName() + "</div>")
   var barWrapper = $("<div class='barWrapper'></div>");
 
+/*
   if (standardData.mean > 0 && studentYear == 4) {
     var diamond = $("<div class='diamond'>&diams;</div>");
     barWrapper.append(diamond);
@@ -599,7 +599,7 @@ function makeStandardBar(standardData){
     var left = standardMean * 11 - 4;
     diamond.css("left", left + "px");
   }
-
+*/
   standardBar.append(barWrapper);
   var cellCount = 0;
   for (var year in standardData.levels){
