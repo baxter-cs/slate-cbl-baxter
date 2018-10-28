@@ -183,20 +183,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="indicator-box">
+                        <!--div class="indicator-box">
                             <div v-for="skill in competency.skills">
                                 <div v-html="skill.demonstratedLevel"></div>
                             </div>
-                        </div>
+                        </div-->
                     </div>
                 </div>
             </div>
+<!--
             <div v-for = "section in sections">
                 <div v-html="section.title"></div>
                 <div v-html="section.teacher"></div>
             </div>
         </div>
     </div>
+-->
 </div>
 
     <script src="scripts/reportcard.js"></script>

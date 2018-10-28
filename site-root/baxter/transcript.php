@@ -12,7 +12,6 @@ use Slate\CBL\Tasks\TaskSkill;
 use Slate\CBL\Tasks\StudentTaskSkill;
 use Emergence\People\GuardianRelationship;
 
-$GLOBALS['Session']->requireAccountLevel('Staff');
 
 
 $transcriptStudents = [];
@@ -204,7 +203,7 @@ function RenderReportCard($studentID) {
         ];        
     }
     
-    
+    /*
     $sectionParticipants = SectionParticipant::getAllByWhere([
        'PersonID' => $studentID,
     ]);
@@ -236,7 +235,7 @@ function RenderReportCard($studentID) {
     }
     
     
-    
+    */
 
     $student = [
         'lastName' => $Student->LastName,
@@ -244,7 +243,7 @@ function RenderReportCard($studentID) {
         'id' => $Student->ID,        
     ];
     RequestHandler::respond('baxter/reportcard', [
-      'sections' => $sectionInfos,
+      //'sections' => $sectionInfos,
       'student' => $student,
       'contentAreas' => $contentAreas,
     ]);

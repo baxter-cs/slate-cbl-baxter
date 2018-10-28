@@ -24,8 +24,8 @@ function makeStudentReportVue(student, sections, contentAreas){
             console.log(competency);
             for(var skillKey in competency.skills){
                 skill = competency.skills[skillKey];
-                console.log(skill);
-                var stemIndex = 3 - yearsAgo(new Date(skill.demonstrated));
+                var demonstratedDate = new Date(skill.demonstrated * 1000);
+                var stemIndex = 3 - yearsAgo(demonstratedDate);
                 levels[stemIndex].push(skill);
             }
         }
@@ -59,7 +59,7 @@ function makeStudentReportVue(student, sections, contentAreas){
             ]
         },
         methods: {
-            getDemosAtLevel function(skills){
+            getDemosAtLevel: function(skills){
                 return skills.sort(function(a, b){ return a.demonstratedLevel - b.demonstratedLevel });
             },            
             standardLevelString: function(levelNum){
