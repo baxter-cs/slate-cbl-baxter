@@ -1,61 +1,121 @@
+
 $level-colors: dynamic(
-    #666, // 1
-    #666, // 2
-    #666, // 3
-    #666, // 4
-    #666, // 5
-    #d11141, // 6
-    #00aedb, // 7
-    #8e7cc3, // 8
-    #d94181, // 9
-    #ffa200, // 10
-    #5dc02a, // 11
-    #008cc1 // 12
+    #d94181, // 1
+    #ffa200, // 2
+    #5dc02a, // 3
+    #008cc1, // 4
+    #6320ca, // 5
+    #0040ff, // 6
+    #888, // 7
+    #888, // 8
+    #888, // 9
+    #888, // 10
+    #888, // 11
+    #888 // 12
 );
 
-
-
 $level-colors-light: dynamic(
-    #aaa, // 1
-    #aaa, // 2
-    #aaa, // 3
-    #aaa, // 4
-    #aaa, // 5
-    lighten(nth($level-colors, 6), 20%), // 6
-    lighten(nth($level-colors, 7), 20%), // 7
-    lighten(nth($level-colors, 8), 20%), // 8
-    #ea97ba, // 9
-    #ffcc73, // 10
-    #a6dc8a, // 11
-    #73c0dd // 12
+    #ea97ba, // 1
+    #ffcc73, // 2
+    #a6dc8a, // 3
+    #73c0dd, // 4
+    #ae82f3, // 5
+    #0040ff, // 6
+    #888, // 7
+    #888, // 8
+    #888, // 9
+    #888, // 10
+    #888, // 11
+    #888 // 12
 );
 
 $level-colors-medium: dynamic(
-    #888, // 1
-    #888, // 2
-    #888, // 3
-    #888, // 4
-    #888, // 5
-    lighten(nth($level-colors, 6), 9%), // 6
-    lighten(nth($level-colors, 7), 9%), // 7
-    lighten(nth($level-colors, 8), 9%), // 8
-    #e1679a, // 9
-    #ffb533, // 10
-    #7dcd55, // 11
-    #33a3cd // 12
+    #e1679a, // 1
+    #ffb533, // 2
+    #7dcd55, // 3
+    #008cc1, // 4
+    #6320ca, // 5
+    #0040ff, // 6
+    #888, // 7
+    #888, // 8
+    #888, // 9
+    #888, // 10
+    #888, // 11
+    #888 // 12
 );
 
 $level-colors-dark: dynamic(
-    #444, // 1
-    #444, // 2
-    #444, // 3
-    #444, // 4
-    #444, // 5
-    darken(nth($level-colors, 6), 10%), // 6
-    darken(nth($level-colors, 7), 10%), // 7
-    darken(nth($level-colors, 8), 10%), // 8
-    #ca274f, // 9
-    #ff7d00, // 10
-    #38a719, // 11
-    #005ea8 // 12
+    #ca274f, // 1
+    #ff7d00, // 2
+    #38a719, // 3
+    #005ea8, // 4
+    #4a1f8e, // 5
+    #0040ff, // 6
+    #888, // 7
+    #888, // 8
+    #888, // 9
+    #888, // 10
+    #888, // 11
+    #888 // 12
 );
+
+$g: dynamic('cbl-grid');
+
+
+.#{$g}-legend-item {
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: .25em;
+    padding: .25em .5em;
+    width: 2.5em;
+}
+
+.#{$g}-progress-percent {
+    alpha: 0;
+}
+.#{$g}-progress-average {
+    display: none;
+}
+
+@for $n from 1 through length($level-colors) {
+    .cbl-level-#{$n} {
+        $level-color:        nth($level-colors,        $n);
+        $level-color-light:  nth($level-colors-light,  $n);
+        $level-color-medium: nth($level-colors-medium, $n);
+        $level-color-dark:   nth($level-colors-dark,   $n);
+
+        &.level-color {
+            @extend .level-n;
+            background-color: $level-color !important;
+        }
+
+        &.#{$g}-progress-cell {
+            background-color: $level-color-light !important;
+        }
+
+        .#{$g}-progress-bar {
+            @include background-image(linear-gradient(
+                $level-color,
+                $level-color-dark
+            ));
+        }
+
+        .#{$g}-demo {
+            &:hover,
+            &:focus {
+                box-shadow: inset 0 0 0 2px $level-color-light;
+            }
+
+            &.#{$g}-demo-missing {
+                background-color: mix($text-color, $page-bg-color, 17%);
+                color: mix($text-color, $page-bg-color, 67%);
+                font-weight: normal;
+                text-shadow: none;
+            }
+
+            &.#{$g}-demo-counted {
+                background-color: $level-color-medium;
+            }
+        }
+    }
+}
