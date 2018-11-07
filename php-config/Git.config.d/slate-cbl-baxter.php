@@ -8,6 +8,8 @@ Git::$repositories['slate-cbl-baxter'] = [
         'php-classes/Slate/CBL/StudentCompetency.php',
         'php-config/Emergence/WebApps/SenchaApp.config.d/slate-cbl-baxter.php',
         'php-config/Git.config.d/slate-cbl-baxter.php',
+        'php-config/Site.config.d/slate-cbl-baxter.php',
+        'php-config/Slate/UI/UserProfile.config.d/cbl.php',        
         'php-config/Slate/CBL' => [
             'exclude' => [
                 '#^/Demonstrations/ExperienceDemonstration\.config\.d/fields\.php$#',
