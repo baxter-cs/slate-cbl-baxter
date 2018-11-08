@@ -202,6 +202,7 @@ class StudentCompetency extends \ActiveRecord
                            AND (
                             DemonstrationSkill.DemonstratedLevel >= %5$u 
                             OR (DemonstrationSkill.Override = 1 AND DemonstrationSkill.TargetLevel = %5$u)
+                            OR (DemonstrationSkill.DemonstratedLevel = 0 AND DemonstrationSkill.TargetLevel = %5$u)
                           )
                          ORDER BY SkillID, DemonstrationDate, DemonstrationID
                         ',
