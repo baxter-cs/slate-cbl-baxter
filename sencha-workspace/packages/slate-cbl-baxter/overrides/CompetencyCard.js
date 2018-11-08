@@ -87,7 +87,7 @@ Ext.define('Baxter.cbl.overrides.StudentCompetencies', {
                               '<tpl if="Override">',
                                   '<i class="fa fa-check"></i>',
                               '<tpl elseif="DemonstratedLevel == 0">',
-                                  'M',
+                                  'NE',
                               '<tpl else>',
                                   '{[getLevelShortName(values.DemonstratedLevel)]}',
                               '</tpl>',
