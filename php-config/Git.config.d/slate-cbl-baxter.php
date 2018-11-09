@@ -9,12 +9,10 @@ Git::$repositories['slate-cbl-baxter'] = [
         'php-config/Git.config.d/slate-cbl-baxter.php',
         'php-config/Site.config.d/slate-cbl-baxter.php',
         'php-config/Slate/UI/UserProfile.config.d/cbl-baxter.php',
-        'php-config/Slate/CBL' => [
-            'exclude' => [
-                '#^/Demonstrations/ExperienceDemonstration\.config\.d/fields\.php$#',
-                '#^/Tasks/ExperienceTask\.config\.d/fields\.php$#'
-            ]
-        ],
+        'php-config/Slate/CBL/Demonstrations/DemonstrationSkill.config.d/baxter.php',
+        'php-config/Slate/CBL/StudentCompetency.config.d/demonstration-conditions.php',
+        'php-config/Slate/CBL/StudentCompetency.config.d/demonstrations-at-level.php',
+        '/php-config/Slate/CBL/StudentCompetency.config.d/is-level-complete.php',
         'sencha-workspace/packages/slate-cbl-baxter',
         'sencha-workspace/packages/slate-cbl/sass/etc/level-colors.scss',
         'site-root/baxter',
