@@ -14,7 +14,7 @@ command -v underscore >/dev/null 2>&1 || { echo >&2 "Please run: npm install -g 
 
 
 # ensure source branch is up-to-date
-git pull --ff origin $SOURCE_BRANCH >/dev/null 2>&1 || { echo >&2 "Could not fast-fwd $SOURCE_BRANCH"; exit 1; }
+git pull --ff-only origin $SOURCE_BRANCH >/dev/null 2>&1 || { echo >&2 "Could not fast-fwd $SOURCE_BRANCH"; exit 1; }
 
 
 # check next version
@@ -29,8 +29,11 @@ git rev-parse -q --verify "refs/tags/v$VERSION_NEXT" >/dev/null && { echo >&2 "T
 
 # check that builds branch doesn't have same version already, or create new builds branch
 if git rev-parse -q --verify "$BUILD_BRANCH" ; then
+    echo "Switching to existing build branch: $BUILD_BRANCH"
+    git checkout $BUILD_BRANCH
+
     # fast forward build branch
-    git fetch origin $BUILD_BRANCH:$BUILD_BRANCH || { echo >&2 "Could not fast-fwd $BUILD_BRANCH"; exit 1; }
+    git pull --ff-only origin $BUILD_BRANCH >/dev/null 2>&1 || { echo >&2 "Could not fast-fwd $BUILD_BRANCH"; exit 1; }
 
     VERSION_LAST=`git show $BUILD_BRANCH:$JSON_PATH | underscore extract sencha.version --outfmt text`
     echo "Package version in $BUILD_BRANCH: $VERSION_LAST"
@@ -38,14 +41,11 @@ if git rev-parse -q --verify "$BUILD_BRANCH" ; then
     test "$VERSION_LAST" != "$VERSION_NEXT" || { echo >&2 "Package version must be updated in $JSON_PATH"; exit 1; }
 else
     echo "Creating build branch: $BUILD_BRANCH"
-    git branch $BUILD_BRANCH
+    git checkout -b $BUILD_BRANCH
 fi
 
 
 # build to branch
-echo "Switching to build branch: $BUILD_BRANCH"
-git checkout $BUILD_BRANCH
-
 BUILD_HEAD=`git rev-parse $BUILD_BRANCH`
 echo "Saving origin build branch head: $BUILD_HEAD"
 
