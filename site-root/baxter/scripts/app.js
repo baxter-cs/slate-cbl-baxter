@@ -221,8 +221,8 @@ function renderStudentInfo(data){
   $("#studentAddress").html([data["Street Address"],data["City"],data["State"],data["Zip"]].join(" "));
   ;
   $("#studentBirthdate").html(m + "/" + d + "/" + y);
-  if(studentYear >= 4){  
-     // $("#graduationDate").html(6 + "/" + 2 + "/" + 2018);
+  if( data["Graduation Date"] && false){  
+     $("#graduationDate").html("FIX THIS");
   }
   $("#studentGpa").html(parseFloat(data["GPA"]).toPrecision(2));
   $("#p2info").html($("#p1info").html());
@@ -432,23 +432,15 @@ function fixDesignProcess(standardsData){
  // var ao = getStandardDataByName("Analyze and Optimize Solutions", standardsData);
   var designProReal = getStandardDataByName("Design", standardsData);
   var levels = [];
- /  var compVal = dprealLevel;
-      for(var i = 0; i < 4; i++){
-    //      if(dp){
-    //        var dpLevel = dp.levels[i];
-    //        var dsLevel = ds? ds.levels[i] : 0;
-     //       var aoLevel = ao? ao.levels[i] : 0;        
-     //       compVal = dropLowest([dpLevel, dsLevel, aoLevel]);
-     //     } else {          
-              dp = designProReal;
-          }
+  for(var i = 0; i < 4; i++){    
          var dprealLevel = designProReal.levels[i];
-          levels.push(dprealLevel);
+         levels.push(dprealLevel);
       }
-      designProReal.name = "Design Process";
-      designProReal.shouldRender = true;
-      designProReal.levels = levels;
-      return standardsData;
+      
+     designProReal.name = "Design Process";
+     designProReal.shouldRender = true;
+     designProReal.levels = levels;
+     return standardsData;
 }
 
 function renderStandards(standardsData, dept) {
