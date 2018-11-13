@@ -11,7 +11,7 @@ Git::$repositories['slate-cbl-baxter'] = [
         'php-config/Slate/CBL/Demonstrations/DemonstrationSkill.config.d/baxter.php',
         'php-config/Slate/CBL/StudentCompetency.config.d/demonstration-conditions.php',
         'php-config/Slate/CBL/StudentCompetency.config.d/demonstrations-at-level.php',
-        '/php-config/Slate/CBL/StudentCompetency.config.d/is-level-complete.php',
+        'php-config/Slate/CBL/StudentCompetency.config.d/is-level-complete.php',
         'sencha-workspace/packages/slate-cbl-baxter',
         'sencha-workspace/packages/slate-cbl/sass/etc/level-colors.scss',
         'site-root/baxter',
