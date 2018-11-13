@@ -1,8 +1,6 @@
 Ext.define('Baxter.cbl.override.StudentLevelsLegend', {
     override: 'SlateDemonstrationsStudent.view.Dashboard',
-    requires: [
-        'Slate.cbl.util.Config'
-    ],
+
 
     initItems: function() {
         this.callParent();

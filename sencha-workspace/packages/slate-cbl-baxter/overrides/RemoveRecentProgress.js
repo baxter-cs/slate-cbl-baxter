@@ -1,6 +1,7 @@
 Ext.define('Baxter.cbl.overrides.RemoveRecentProgress', {
     override: 'SlateDemonstrationsStudent.controller.RecentProgress',
 
+
     onStudentChange: Ext.emptyFn,
     onContentAreaChange: Ext.emptyFn,
 

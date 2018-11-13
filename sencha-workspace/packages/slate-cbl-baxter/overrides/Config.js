@@ -1,6 +1,7 @@
 Ext.define('Baxter.cbl.overrides.Config', {
     override: 'Slate.cbl.util.Config',
 
+
     getTitleForRating: function(rating) {
         return this.callOverridden([Math.min(rating, 6)]);
     },
