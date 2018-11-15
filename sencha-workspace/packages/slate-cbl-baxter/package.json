@@ -38,6 +38,7 @@
          *    "toolkit": "classic",
          */
         "toolkit": "classic",
+        "theme": "slate-theme",
 
          /**
           * The author of the package.
@@ -169,7 +170,8 @@
              * block before any files associated with JavaScript classes.
              */
             "var": [
-                "${package.dir}/sass/var"
+                "${package.dir}/sass/var",
+                "${package.dir}/resources/slate-frame/sass/_variables-all.scss"
             ],
 
             /**
