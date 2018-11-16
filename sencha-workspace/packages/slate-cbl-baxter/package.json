@@ -38,6 +38,7 @@
          *    "toolkit": "classic",
          */
         "toolkit": "classic",
+        "theme": "slate-theme",
 
          /**
           * The author of the package.
@@ -63,7 +64,7 @@
          * Typically, changes to the package should come along with changes to the version.
          * This number should be in this format: d+(.d+)*
          */
-        "version": "1.1.3",
+        "version": "1.2.0",
 
         /**
          * The version that users can transparently update from without requiring code changes.
@@ -82,14 +83,7 @@
         /**
          * Additional resources used during theme slicing operations
          */
-        "slicer": {
-            "js": [
-                {
-                    "path": "${package.dir}/sass/example/custom.js",
-                    "isWidgetManifest": true
-                }
-            ]
-        },
+        "slicer": null,
 
         /**
          * Controls the output directory.
@@ -169,7 +163,8 @@
              * block before any files associated with JavaScript classes.
              */
             "var": [
-                "${package.dir}/sass/var"
+                "${package.dir}/sass/var",
+                "${package.dir}/resources/slate-frame/sass/_variables-all.scss"
             ],
 
             /**
@@ -212,25 +207,7 @@
             "${package.dir}/overrides"
         ],
 
-        "example": {
-            /**
-             * One or more folders that contain example applications for this package.
-             */
-            "path": [
-                "${package.dir}/examples"
-            ]
-
-            /**
-             * You can list apps specifically.
-             *
-             *      "apps": [
-             *          "demo1",
-             *          "demo2"
-             *      ]
-             *
-             * By default, all subfolders in the path are considered example applications.
-             */
-        },
+        "example": null,
 
         /**
          * The framework this package will use (i.e., "ext" or "touch").

@@ -7,7 +7,8 @@
         var currentYearStart = {$currentYear};
         var studentYear = {$studentYear};
         var STUDENT_START_YEAR = {$startYear};
-
+        var YEARS_AT_BAXTER = {$yearSpan};
+    
         var allData = {$data};
     </script>
     <script src="scripts/app.js"></script>

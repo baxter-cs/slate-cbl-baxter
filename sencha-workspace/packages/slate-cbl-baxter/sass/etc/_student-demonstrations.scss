@@ -1,0 +1,18 @@
+.slate-demonstrations-student-competencycard {
+    .stats-ct {
+        display: none;
+    }
+
+    .cbl-progress-level:before {
+        content: 'Working toward: ';
+    }
+
+    .cbl-progress-percent,
+    .cbl-progress-bar-missed {
+        display: none;
+    }
+
+    .cbl-progress-bar {
+        width: 100% !important;
+    }
+}

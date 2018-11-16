@@ -29,6 +29,7 @@ if ($_POST['submitTranscript']) {
         'studentYear' => $_POST['studentYear'],
         'startYear' => $_POST['startYear'],
         'currentYear' => $_POST['currentYear'],
+        'yearSpan' => $_POST['studentSpan'],
         'renderTranscript' => true
     ]);
 } elseif ($_POST['submitReportCard']) {

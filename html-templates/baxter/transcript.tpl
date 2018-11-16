@@ -95,15 +95,17 @@
             {labeledField html=$studentsSelect type=select label=student class=auto-width}
 
             <br/>
-            <input type="submit" name="submitProgress" value="Generate Progress Report">
-            <input type="submit" name="submitReportCard" value="Generate Report Card">
+                <input type="submit" name="submitProgress" value="Generate Progress Report">
+                <input type="submit" name="submitReportCard" value="Generate Report Card">
             <hr/>
+
             <div>
                 <h2>Transcripts</h2>
                 <div>
                     <h3>Paste Transcript JSON Here</h3>
                     <textarea name="studentData" value=""></textarea>
                 </div>
+
                 <div>
                     <h3>Started at Baxter</h3>
                     <select class="field-control inline medium" name="startYear">
@@ -111,13 +113,26 @@
                         <option value=2>10th</option>
                         <option value=3>11th</option>
                         <option value=4>12th</option>
+                        <option value=5>12th+</option>
+                        <option value=612th++</option>
                     </select>
+
                     <h3>Current Grade</h3>
                     <select class="field-control inline medium" name="studentYear">
                         <option selected value=4>12th</option>
                         <option value=3>11th</option>
                         <option value=2>10th</option>
                         <option value=1>9th</option>
+                        <option  value=5>12th+</option>
+                        <option  value=6>12th++</option>
+                    </select>
+
+                    <h3>Years At Baxter total</h3>
+                    <select class="field-control inline medium" name="studentSpan">
+                        <option selected value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=3>3</option>
                     </select>
 
                 </div>  

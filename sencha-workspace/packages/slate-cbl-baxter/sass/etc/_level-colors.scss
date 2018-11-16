@@ -6,12 +6,12 @@ $level-colors: dynamic(
     #008cc1, // 4
     #6320ca, // 5
     #0040ff, // 6
-    #888, // 7
-    #888, // 8
-    #888, // 9
-    #888, // 10
-    #888, // 11
-    #888 // 12
+    #0040ff, // 7
+    #0040ff, // 8
+    #0040ff, // 9
+    #0040ff, // 10
+    #0040ff, // 11
+    #0040ff  // 12
 );
 
 $level-colors-light: dynamic(
@@ -21,12 +21,12 @@ $level-colors-light: dynamic(
     #73c0dd, // 4
     #ae82f3, // 5
     #0040ff, // 6
-    #888, // 7
-    #888, // 8
-    #888, // 9
-    #888, // 10
-    #888, // 11
-    #888 // 12
+    #0040ff, // 7
+    #0040ff, // 8
+    #0040ff, // 9
+    #0040ff, // 10
+    #0040ff, // 11
+    #0040ff // 12
 );
 
 $level-colors-medium: dynamic(
@@ -36,12 +36,12 @@ $level-colors-medium: dynamic(
     #008cc1, // 4
     #6320ca, // 5
     #0040ff, // 6
-    #888, // 7
-    #888, // 8
-    #888, // 9
-    #888, // 10
-    #888, // 11
-    #888 // 12
+    #0040ff, // 7
+    #0040ff, // 8
+    #0040ff, // 9
+    #0040ff, // 10
+    #0040ff, // 11
+    #0040ff // 12
 );
 
 $level-colors-dark: dynamic(
@@ -51,12 +51,12 @@ $level-colors-dark: dynamic(
     #005ea8, // 4
     #4a1f8e, // 5
     #0040ff, // 6
-    #888, // 7
-    #888, // 8
-    #888, // 9
-    #888, // 10
-    #888, // 11
-    #888 // 12
+    #0040ff, // 7
+    #0040ff, // 8
+    #0040ff, // 9
+    #0040ff, // 10
+    #0040ff, // 11
+    #0040ff // 12
 );
 
 $g: dynamic('cbl-grid');
@@ -78,6 +78,15 @@ $g: dynamic('cbl-grid');
 }
 
 @for $n from 1 through length($level-colors) {
+    // color demo cells based on rating
+    .cbl-skill-demo,
+    .cbl-grid-demo {
+        &.cbl-rating-#{$n} {
+            background-color: nth($level-colors, $n) !important;
+        }
+    }
+
+    // TODO: extract this to a mixin that can be loaded from slate-cbl package?
     .cbl-level-#{$n} {
         $level-color:        nth($level-colors,        $n);
         $level-color-light:  nth($level-colors-light,  $n);

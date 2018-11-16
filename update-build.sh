@@ -64,7 +64,7 @@ BUILD_PATH=`cd "$BUILD_PATH"; pwd`
 echo "Building package: $PACKAGE_PATH"
 cd "$PACKAGE_PATH"
 
-if sencha ant -Dskip.sass=1 -Dcompressor.polyfills=none build ; then
+if sencha ant -Dcompressor.polyfills=none build ; then
     echo "Committing build"
 
     git add -f --all $BUILD_PATH
