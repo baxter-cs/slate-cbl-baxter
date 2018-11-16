@@ -1,11 +1,16 @@
-Ext.define('Baxter.cbl.override.StudentLevelsLegend', {
+Ext.define('Baxter.cbl.overrides.StudentDemonstrationsDashboard', {
     override: 'SlateDemonstrationsStudent.view.Dashboard',
 
 
     initItems: function() {
-        this.callParent();
+        var me = this;
 
-        this.insert(3, {
+        me.callParent(arguments);
+
+        me.remove(me.getCompetenciesSummary(), false);
+        me.remove(me.getRecentProgress(), false);
+
+        me.insert(0, {
             xtype: 'component',
             style: {
                 textAlign: 'right',
@@ -24,3 +29,4 @@ Ext.define('Baxter.cbl.override.StudentLevelsLegend', {
         });
     }
 });
+
