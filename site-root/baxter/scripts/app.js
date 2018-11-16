@@ -17,6 +17,7 @@ var deptOrdered = [
 ];
 
 
+
 var otherClasses = {
   "Digital Photography I" : {division : 1},  
   "University of Maine: Intro to World Politics" : {division : 3},
@@ -432,7 +433,7 @@ function fixDesignProcess(standardsData){
  // var ao = getStandardDataByName("Analyze and Optimize Solutions", standardsData);
   var designProReal = getStandardDataByName("Design", standardsData);
   var levels = [];
-  for(var i = 0; i < 4; i++){    
+  for(var i = 0; i < YEARS_AT_BAXTER; i++){    
          var dprealLevel = designProReal.levels[i];
          levels.push(dprealLevel);
       }
@@ -470,7 +471,7 @@ function makeDeptDiv(dept, courseData, standardsData){
   deptContainer.append(deptEl);
   deptEl.append(bars);
 
-  for(var i = 1; i  <= 4; i++){
+  for(var i = 1; i  <= YEARS_AT_BAXTER; i++){
     var yearHead = $("<div class='deptYearHead'>" + getYearSpan(i) + "</div>");
     var coursesEl = $("<div class='deptYear'></div>");
     var classes = getClasses(courseData, i, null, dept).sort(function(a,b){
