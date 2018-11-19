@@ -12,5 +12,4 @@ Ext.define('Baxter.cbl.overrides.StudentDemonstrationsDashboard', {override:'Sla
   me.callParent(arguments);
   me.remove(me.getCompetenciesSummary(), false);
   me.remove(me.getRecentProgress(), false);
-  me.insert(0, {xtype:'component', style:{textAlign:'right', marginBottom:'3%'}, renderTpl:['\x3cdiv class\x3d"cbl-grid-legend"\x3e', '\x3cspan class\x3d"cbl-grid-legend-label"\x3ePortfolios:\x26ensp;\x3c/span\x3e', '\x3ctpl foreach\x3d"Slate.cbl.util.Config.getLevels()"\x3e', '\x3ctpl if\x3d"xkey !\x3d 0"\x3e', '\x3cspan class\x3d"cbl-grid-legend-item level-color cbl-level-{$}" title\x3d"{title:htmlEncode}"\x3e{abbreviation:htmlEncode}\x3c/span\x3e', '\x3c/tpl\x3e', '\x3c/tpl\x3e', '\x3c/div\x3e']});
 }});

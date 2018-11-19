@@ -1,5 +1,5 @@
 $image-search-path: '/Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/build/resources' !default;
-$theme-name:  'slate-theme' !default;
+$theme-name:  'ext-theme-neptune' !default;
 $include-baxter-cbl-override-slider: dynamic(true);;
 $include-baxter-cbl-overrides-config: dynamic(true);;
 $include-baxter-cbl-overrides-studentdemonstrationsdashboard: dynamic(true);;
@@ -893,14 +893,6 @@ $include-ext-view-view: dynamic(false);;
 $include-ext-window-messagebox: dynamic(false);;
 $include-ext-window-toast: dynamic(false);;
 $include-ext-window-window: dynamic(false);;
-$include-slatetheme-button-button: dynamic(false);;
-$include-slatetheme-dom-shadow: dynamic(false);;
-$include-slatetheme-grid-panel: dynamic(false);;
-$include-slatetheme-override-app-application: dynamic(false);;
-$include-slatetheme-resizer-splitter: dynamic(false);;
-$include-slatetheme-tree-panel: dynamic(false);;
-$include-slatetheme-view-table: dynamic(false);;
-$include-slatetheme-window-messagebox: dynamic(false);;
 
 
 /* ======================== ETC ======================== */
@@ -945,13 +937,13 @@ $current-resource-root: $theme-neptune-resource-root;
 $relative-image-path-for-uis: $theme-neptune-resource-path;
 @import '../../../extjs/classic/theme-neptune/sass/etc/all';
 
-/* including package slate-theme */
-$slate-theme-resource-root: '' !default;
-$slate-theme-resource-path: 'images' !default;
-$current-package: 'slate-theme';
-$current-resource-root: $slate-theme-resource-root;
-$relative-image-path-for-uis: $slate-theme-resource-path;
-@import '../../slate-theme/sass/etc/all';
+/* including package slate-cbl-colors */
+$slate-cbl-colors-resource-root: 'slate-cbl-colors' !default;
+$slate-cbl-colors-resource-path: 'slate-cbl-colors/images' !default;
+$current-package: 'slate-cbl-colors';
+$current-resource-root: $slate-cbl-colors-resource-root;
+$relative-image-path-for-uis: $slate-cbl-colors-resource-path;
+@import '../../slate-cbl-colors/sass/etc/all';
 
 /* including package slate-cbl-baxter */
 $slate-cbl-baxter-resource-root: '' !default;
@@ -1093,35 +1085,3 @@ $relative-image-path-for-uis: $theme-neptune-resource-path;
 @import '../../../extjs/classic/theme-neptune/sass/var/toolbar/Breadcrumb';
 @import '../../../extjs/classic/theme-neptune/sass/var/tree/View';
 @import '../../../extjs/classic/theme-neptune/sass/var/window/Toast';
-
-/* including package slate-theme */
-$slate-theme-resource-root: '' !default;
-$slate-theme-resource-path: 'images' !default;
-$current-package: 'slate-theme';
-$current-resource-root: $slate-theme-resource-root;
-$relative-image-path-for-uis: $slate-theme-resource-path;
-@import '../../slate-theme/sass/var/Component';
-@import '../../slate-theme/sass/var/button/Button';
-@import '../../slate-theme/sass/var/resizer/Splitter';
-@import '../../slate-theme/sass/var/toolbar/Toolbar';
-@import '../../slate-theme/sass/var/panel/Panel';
-@import '../../slate-theme/sass/var/window/Window';
-@import '../../slate-theme/sass/var/form/field/Base';
-@import '../../slate-theme/sass/var/form/FieldSet';
-@import '../../slate-theme/sass/var/view/BoundList';
-@import '../../slate-theme/sass/var/form/field/Display';
-@import '../../slate-theme/sass/var/view/Table';
-@import '../../slate-theme/sass/var/grid/column/Column';
-@import '../../slate-theme/sass/var/grid/feature/Grouping';
-@import '../../slate-theme/sass/var/layout/container/Accordion';
-@import '../../slate-theme/sass/var/layout/container/Border';
-@import '../../slate-theme/sass/var/tab/Tab';
-@import '../../slate-theme/sass/var/tab/Bar';
-
-/* including package slate-cbl-baxter */
-$slate-cbl-baxter-resource-root: '' !default;
-$slate-cbl-baxter-resource-path: 'images' !default;
-$current-package: 'slate-cbl-baxter';
-$current-resource-root: $slate-cbl-baxter-resource-root;
-$relative-image-path-for-uis: $slate-cbl-baxter-resource-path;
-@import '../resources/slate-frame/sass/_variables-all';
