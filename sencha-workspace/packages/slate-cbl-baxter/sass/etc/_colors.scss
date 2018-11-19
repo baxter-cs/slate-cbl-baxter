@@ -65,3 +65,10 @@ $level-colors-dark: dynamic(
     $level-colors-medium,
     $level-colors-dark
 );
+
+@include rating-colors(
+    $level-colors,
+    $level-colors-light,
+    $level-colors-medium,
+    $level-colors-dark
+);
