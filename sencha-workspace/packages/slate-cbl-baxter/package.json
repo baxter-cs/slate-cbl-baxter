@@ -38,7 +38,6 @@
          *    "toolkit": "classic",
          */
         "toolkit": "classic",
-        "theme": "slate-theme",
 
          /**
           * The author of the package.
@@ -64,7 +63,7 @@
          * Typically, changes to the package should come along with changes to the version.
          * This number should be in this format: d+(.d+)*
          */
-        "version": "1.2.0",
+        "version": "1.3.0",
 
         /**
          * The version that users can transparently update from without requiring code changes.
@@ -99,9 +98,8 @@
         /**
          * The theme (package) this package will use (e.g., "ext-theme-neptune", etc.).
          * This is only needed if the built package will be used by a non-Cmd application.
-         *
-         *     "theme": "ext-theme-classic",
          */
+         "theme": "ext-theme-neptune",
 
         /**
          * Sass configuration properties.
@@ -163,8 +161,7 @@
              * block before any files associated with JavaScript classes.
              */
             "var": [
-                "${package.dir}/sass/var",
-                "${package.dir}/resources/slate-frame/sass/_variables-all.scss"
+                "${package.dir}/sass/var"
             ],
 
             /**
@@ -242,6 +239,8 @@
          *          }
          *      }
          */
-        "requires": []
+        "requires": [
+            "slate-cbl-colors"
+        ]
     }
 }

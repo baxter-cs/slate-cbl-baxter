@@ -3,16 +3,16 @@
         display: none;
     }
 
-    .cbl-progress-level:before {
+    .cbl-level-progress-label:before {
         content: 'Working toward: ';
     }
 
-    .cbl-progress-percent,
-    .cbl-progress-bar-missed {
+    .cbl-level-progress-percent,
+    .cbl-level-progress-missed {
         display: none;
     }
 
-    .cbl-progress-bar {
+    .cbl-level-progress-bar {
         width: 100% !important;
     }
 }

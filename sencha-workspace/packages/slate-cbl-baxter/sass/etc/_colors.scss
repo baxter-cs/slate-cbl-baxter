@@ -1,0 +1,74 @@
+
+$level-colors: dynamic(
+    #d94181, // 1
+    #ffa200, // 2
+    #5dc02a, // 3
+    #008cc1, // 4
+    #6320ca, // 5
+    #0040ff, // 6
+    #0040ff, // 7
+    #0040ff, // 8
+    #0040ff, // 9
+    #0040ff, // 10
+    #0040ff, // 11
+    #0040ff  // 12
+);
+
+$level-colors-light: dynamic(
+    #ea97ba, // 1
+    #ffcc73, // 2
+    #a6dc8a, // 3
+    #73c0dd, // 4
+    #ae82f3, // 5
+    #0040ff, // 6
+    #0040ff, // 7
+    #0040ff, // 8
+    #0040ff, // 9
+    #0040ff, // 10
+    #0040ff, // 11
+    #0040ff  // 12
+);
+
+$level-colors-medium: dynamic(
+    #e1679a, // 1
+    #ffb533, // 2
+    #7dcd55, // 3
+    #008cc1, // 4
+    #6320ca, // 5
+    #0040ff, // 6
+    #0040ff, // 7
+    #0040ff, // 8
+    #0040ff, // 9
+    #0040ff, // 10
+    #0040ff, // 11
+    #0040ff  // 12
+);
+
+$level-colors-dark: dynamic(
+    #ca274f, // 1
+    #ff7d00, // 2
+    #38a719, // 3
+    #005ea8, // 4
+    #4a1f8e, // 5
+    #0040ff, // 6
+    #0040ff, // 7
+    #0040ff, // 8
+    #0040ff, // 9
+    #0040ff, // 10
+    #0040ff, // 11
+    #0040ff  // 12
+);
+
+@include level-colors(
+    $level-colors,
+    $level-colors-light,
+    $level-colors-medium,
+    $level-colors-dark
+);
+
+@include rating-colors(
+    $level-colors,
+    $level-colors-light,
+    $level-colors-medium,
+    $level-colors-dark
+);
