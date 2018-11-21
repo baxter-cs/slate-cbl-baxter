@@ -1,26 +1,44 @@
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:65 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:65 */
 .cbl-skill-demo-counted {
     color: white;
     background-color: #666;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-1 .cbl-level-colored,
 .cbl-level-1.cbl-level-colored {
     color: white;
     background-color: #d94181;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-1 .cbl-level-colored-light,
+.cbl-level-1.cbl-level-colored-light {
+    color: white;
+    background-color: #ea97ba;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-1 .cbl-level-colored-medium,
+.cbl-level-1.cbl-level-colored-medium {
+    color: white;
+    background-color: #e1679a;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-1 .cbl-level-colored-dark,
+.cbl-level-1.cbl-level-colored-dark {
+    color: white;
+    background-color: #ca274f;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-1 .cbl-level-progress-meter,
 .cbl-level-1.cbl-level-progress-meter {
     color: white;
     background-color: #ea97ba;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-1 .is-average-low,
 .cbl-level-1.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(202, 39, 79, 0.4) 11px, rgba(202, 39, 79, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-1 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #d94181), color-stop(0%, #ca274f));
     background-image: -webkit-linear-gradient(#d94181, #ca274f);
@@ -29,42 +47,60 @@
     background-image: -ms-linear-gradient(#d94181, #ca274f);
     background-image: linear-gradient(#d94181, #ca274f);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-1 .cbl-skill-complete-indicator.is-checked {
     border-color: #d94181;
     color: #d94181;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-1 .cbl-skill-demo-counted {
     color: white;
     background-color: #d94181;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-1.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #e1679a;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-1.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #d94181;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-2 .cbl-level-colored,
 .cbl-level-2.cbl-level-colored {
     color: white;
     background-color: #ffa200;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-2 .cbl-level-colored-light,
+.cbl-level-2.cbl-level-colored-light {
+    color: white;
+    background-color: #ffcc73;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-2 .cbl-level-colored-medium,
+.cbl-level-2.cbl-level-colored-medium {
+    color: white;
+    background-color: #ffb533;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-2 .cbl-level-colored-dark,
+.cbl-level-2.cbl-level-colored-dark {
+    color: white;
+    background-color: #ff7d00;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-2 .cbl-level-progress-meter,
 .cbl-level-2.cbl-level-progress-meter {
     color: white;
     background-color: #ffcc73;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-2 .is-average-low,
 .cbl-level-2.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255, 125, 0, 0.4) 11px, rgba(255, 125, 0, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-2 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #ffa200), color-stop(0%, #ff7d00));
     background-image: -webkit-linear-gradient(#ffa200, #ff7d00);
@@ -73,42 +109,60 @@
     background-image: -ms-linear-gradient(#ffa200, #ff7d00);
     background-image: linear-gradient(#ffa200, #ff7d00);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-2 .cbl-skill-complete-indicator.is-checked {
     border-color: #ffa200;
     color: #ffa200;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-2 .cbl-skill-demo-counted {
     color: white;
     background-color: #ffa200;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-2.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #ffb533;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-2.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #ffa200;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-3 .cbl-level-colored,
 .cbl-level-3.cbl-level-colored {
     color: white;
     background-color: #5dc02a;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-3 .cbl-level-colored-light,
+.cbl-level-3.cbl-level-colored-light {
+    color: white;
+    background-color: #a6dc8a;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-3 .cbl-level-colored-medium,
+.cbl-level-3.cbl-level-colored-medium {
+    color: white;
+    background-color: #7dcd55;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-3 .cbl-level-colored-dark,
+.cbl-level-3.cbl-level-colored-dark {
+    color: white;
+    background-color: #38a719;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-3 .cbl-level-progress-meter,
 .cbl-level-3.cbl-level-progress-meter {
     color: white;
     background-color: #a6dc8a;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-3 .is-average-low,
 .cbl-level-3.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(56, 167, 25, 0.4) 11px, rgba(56, 167, 25, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-3 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #5dc02a), color-stop(0%, #38a719));
     background-image: -webkit-linear-gradient(#5dc02a, #38a719);
@@ -117,42 +171,60 @@
     background-image: -ms-linear-gradient(#5dc02a, #38a719);
     background-image: linear-gradient(#5dc02a, #38a719);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-3 .cbl-skill-complete-indicator.is-checked {
     border-color: #5dc02a;
     color: #5dc02a;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-3 .cbl-skill-demo-counted {
     color: white;
     background-color: #5dc02a;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-3.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #7dcd55;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-3.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #5dc02a;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-4 .cbl-level-colored,
 .cbl-level-4.cbl-level-colored {
     color: white;
     background-color: #008cc1;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-4 .cbl-level-colored-light,
+.cbl-level-4.cbl-level-colored-light {
+    color: white;
+    background-color: #73c0dd;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-4 .cbl-level-colored-medium,
+.cbl-level-4.cbl-level-colored-medium {
+    color: white;
+    background-color: #008cc1;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-4 .cbl-level-colored-dark,
+.cbl-level-4.cbl-level-colored-dark {
+    color: white;
+    background-color: #005ea8;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-4 .cbl-level-progress-meter,
 .cbl-level-4.cbl-level-progress-meter {
     color: white;
     background-color: #73c0dd;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-4 .is-average-low,
 .cbl-level-4.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 94, 168, 0.4) 11px, rgba(0, 94, 168, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-4 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #008cc1), color-stop(0%, #005ea8));
     background-image: -webkit-linear-gradient(#008cc1, #005ea8);
@@ -161,42 +233,60 @@
     background-image: -ms-linear-gradient(#008cc1, #005ea8);
     background-image: linear-gradient(#008cc1, #005ea8);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-4 .cbl-skill-complete-indicator.is-checked {
     border-color: #008cc1;
     color: #008cc1;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-4 .cbl-skill-demo-counted {
     color: white;
     background-color: #008cc1;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-4.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #008cc1;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-4.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #008cc1;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-5 .cbl-level-colored,
 .cbl-level-5.cbl-level-colored {
     color: white;
     background-color: #6320ca;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-5 .cbl-level-colored-light,
+.cbl-level-5.cbl-level-colored-light {
+    color: white;
+    background-color: #ae82f3;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-5 .cbl-level-colored-medium,
+.cbl-level-5.cbl-level-colored-medium {
+    color: white;
+    background-color: #6320ca;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-5 .cbl-level-colored-dark,
+.cbl-level-5.cbl-level-colored-dark {
+    color: white;
+    background-color: #4a1f8e;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-5 .cbl-level-progress-meter,
 .cbl-level-5.cbl-level-progress-meter {
     color: white;
     background-color: #ae82f3;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-5 .is-average-low,
 .cbl-level-5.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(74, 31, 142, 0.4) 11px, rgba(74, 31, 142, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-5 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #6320ca), color-stop(0%, #4a1f8e));
     background-image: -webkit-linear-gradient(#6320ca, #4a1f8e);
@@ -205,42 +295,60 @@
     background-image: -ms-linear-gradient(#6320ca, #4a1f8e);
     background-image: linear-gradient(#6320ca, #4a1f8e);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-5 .cbl-skill-complete-indicator.is-checked {
     border-color: #6320ca;
     color: #6320ca;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-5 .cbl-skill-demo-counted {
     color: white;
     background-color: #6320ca;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-5.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #6320ca;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-5.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #6320ca;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-6 .cbl-level-colored,
 .cbl-level-6.cbl-level-colored {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-6 .cbl-level-colored-light,
+.cbl-level-6.cbl-level-colored-light {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-6 .cbl-level-colored-medium,
+.cbl-level-6.cbl-level-colored-medium {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-6 .cbl-level-colored-dark,
+.cbl-level-6.cbl-level-colored-dark {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-6 .cbl-level-progress-meter,
 .cbl-level-6.cbl-level-progress-meter {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-6 .is-average-low,
 .cbl-level-6.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 64, 255, 0.4) 11px, rgba(0, 64, 255, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-6 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #0040ff), color-stop(0%, #0040ff));
     background-image: -webkit-linear-gradient(#0040ff, #0040ff);
@@ -249,42 +357,60 @@
     background-image: -ms-linear-gradient(#0040ff, #0040ff);
     background-image: linear-gradient(#0040ff, #0040ff);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-6 .cbl-skill-complete-indicator.is-checked {
     border-color: #0040ff;
     color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-6 .cbl-skill-demo-counted {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-6.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-6.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-7 .cbl-level-colored,
 .cbl-level-7.cbl-level-colored {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-7 .cbl-level-colored-light,
+.cbl-level-7.cbl-level-colored-light {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-7 .cbl-level-colored-medium,
+.cbl-level-7.cbl-level-colored-medium {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-7 .cbl-level-colored-dark,
+.cbl-level-7.cbl-level-colored-dark {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-7 .cbl-level-progress-meter,
 .cbl-level-7.cbl-level-progress-meter {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-7 .is-average-low,
 .cbl-level-7.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 64, 255, 0.4) 11px, rgba(0, 64, 255, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-7 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #0040ff), color-stop(0%, #0040ff));
     background-image: -webkit-linear-gradient(#0040ff, #0040ff);
@@ -293,42 +419,60 @@
     background-image: -ms-linear-gradient(#0040ff, #0040ff);
     background-image: linear-gradient(#0040ff, #0040ff);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-7 .cbl-skill-complete-indicator.is-checked {
     border-color: #0040ff;
     color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-7 .cbl-skill-demo-counted {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-7.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-7.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-8 .cbl-level-colored,
 .cbl-level-8.cbl-level-colored {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-8 .cbl-level-colored-light,
+.cbl-level-8.cbl-level-colored-light {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-8 .cbl-level-colored-medium,
+.cbl-level-8.cbl-level-colored-medium {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-8 .cbl-level-colored-dark,
+.cbl-level-8.cbl-level-colored-dark {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-8 .cbl-level-progress-meter,
 .cbl-level-8.cbl-level-progress-meter {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-8 .is-average-low,
 .cbl-level-8.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 64, 255, 0.4) 11px, rgba(0, 64, 255, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-8 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #0040ff), color-stop(0%, #0040ff));
     background-image: -webkit-linear-gradient(#0040ff, #0040ff);
@@ -337,42 +481,60 @@
     background-image: -ms-linear-gradient(#0040ff, #0040ff);
     background-image: linear-gradient(#0040ff, #0040ff);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-8 .cbl-skill-complete-indicator.is-checked {
     border-color: #0040ff;
     color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-8 .cbl-skill-demo-counted {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-8.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-8.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-9 .cbl-level-colored,
 .cbl-level-9.cbl-level-colored {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-9 .cbl-level-colored-light,
+.cbl-level-9.cbl-level-colored-light {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-9 .cbl-level-colored-medium,
+.cbl-level-9.cbl-level-colored-medium {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-9 .cbl-level-colored-dark,
+.cbl-level-9.cbl-level-colored-dark {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-9 .cbl-level-progress-meter,
 .cbl-level-9.cbl-level-progress-meter {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-9 .is-average-low,
 .cbl-level-9.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 64, 255, 0.4) 11px, rgba(0, 64, 255, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-9 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #0040ff), color-stop(0%, #0040ff));
     background-image: -webkit-linear-gradient(#0040ff, #0040ff);
@@ -381,42 +543,60 @@
     background-image: -ms-linear-gradient(#0040ff, #0040ff);
     background-image: linear-gradient(#0040ff, #0040ff);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-9 .cbl-skill-complete-indicator.is-checked {
     border-color: #0040ff;
     color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-9 .cbl-skill-demo-counted {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-9.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-9.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-10 .cbl-level-colored,
 .cbl-level-10.cbl-level-colored {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-10 .cbl-level-colored-light,
+.cbl-level-10.cbl-level-colored-light {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-10 .cbl-level-colored-medium,
+.cbl-level-10.cbl-level-colored-medium {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-10 .cbl-level-colored-dark,
+.cbl-level-10.cbl-level-colored-dark {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-10 .cbl-level-progress-meter,
 .cbl-level-10.cbl-level-progress-meter {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-10 .is-average-low,
 .cbl-level-10.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 64, 255, 0.4) 11px, rgba(0, 64, 255, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-10 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #0040ff), color-stop(0%, #0040ff));
     background-image: -webkit-linear-gradient(#0040ff, #0040ff);
@@ -425,42 +605,60 @@
     background-image: -ms-linear-gradient(#0040ff, #0040ff);
     background-image: linear-gradient(#0040ff, #0040ff);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-10 .cbl-skill-complete-indicator.is-checked {
     border-color: #0040ff;
     color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-10 .cbl-skill-demo-counted {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-10.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-10.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-11 .cbl-level-colored,
 .cbl-level-11.cbl-level-colored {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-11 .cbl-level-colored-light,
+.cbl-level-11.cbl-level-colored-light {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-11 .cbl-level-colored-medium,
+.cbl-level-11.cbl-level-colored-medium {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-11 .cbl-level-colored-dark,
+.cbl-level-11.cbl-level-colored-dark {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-11 .cbl-level-progress-meter,
 .cbl-level-11.cbl-level-progress-meter {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-11 .is-average-low,
 .cbl-level-11.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 64, 255, 0.4) 11px, rgba(0, 64, 255, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-11 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #0040ff), color-stop(0%, #0040ff));
     background-image: -webkit-linear-gradient(#0040ff, #0040ff);
@@ -469,42 +667,60 @@
     background-image: -ms-linear-gradient(#0040ff, #0040ff);
     background-image: linear-gradient(#0040ff, #0040ff);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-11 .cbl-skill-complete-indicator.is-checked {
     border-color: #0040ff;
     color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-11 .cbl-skill-demo-counted {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-11.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-11.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:78 */
 .cbl-level-12 .cbl-level-colored,
 .cbl-level-12.cbl-level-colored {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:85 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:84 */
+.cbl-level-12 .cbl-level-colored-light,
+.cbl-level-12.cbl-level-colored-light {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:89 */
+.cbl-level-12 .cbl-level-colored-medium,
+.cbl-level-12.cbl-level-colored-medium {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:94 */
+.cbl-level-12 .cbl-level-colored-dark,
+.cbl-level-12.cbl-level-colored-dark {
+    color: white;
+    background-color: #0040ff;
+}
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:101 */
 .cbl-level-12 .cbl-level-progress-meter,
 .cbl-level-12.cbl-level-progress-meter {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:91 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:107 */
 .cbl-level-12 .is-average-low,
 .cbl-level-12.is-average-low {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0, 64, 255, 0.4) 11px, rgba(0, 64, 255, 0.4) 20px, transparent 21px);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:102 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
 .cbl-level-12 .cbl-level-progress-bar {
     background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #0040ff), color-stop(0%, #0040ff));
     background-image: -webkit-linear-gradient(#0040ff, #0040ff);
@@ -513,115 +729,115 @@
     background-image: -ms-linear-gradient(#0040ff, #0040ff);
     background-image: linear-gradient(#0040ff, #0040ff);
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:111 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:127 */
 .cbl-level-12 .cbl-skill-complete-indicator.is-checked {
     border-color: #0040ff;
     color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:118 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:134 */
 .cbl-level-12 .cbl-skill-demo-counted {
     color: white;
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:123 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:139 */
 .cbl-level-12.cbl-grid-demos-cell .cbl-skill-demo-counted {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:128 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:144 */
 .cbl-level-12.slate-cbl-ratings-slider .x-slider-inner {
     background-color: #0040ff;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-1,
 .cbl-skill-demo.cbl-rating-1,
 .cbl-grid-demo.cbl-rating-1 {
     background-color: #d94181 !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-2,
 .cbl-skill-demo.cbl-rating-2,
 .cbl-grid-demo.cbl-rating-2 {
     background-color: #ffa200 !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-3,
 .cbl-skill-demo.cbl-rating-3,
 .cbl-grid-demo.cbl-rating-3 {
     background-color: #5dc02a !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-4,
 .cbl-skill-demo.cbl-rating-4,
 .cbl-grid-demo.cbl-rating-4 {
     background-color: #008cc1 !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-5,
 .cbl-skill-demo.cbl-rating-5,
 .cbl-grid-demo.cbl-rating-5 {
     background-color: #6320ca !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-6,
 .cbl-skill-demo.cbl-rating-6,
 .cbl-grid-demo.cbl-rating-6 {
     background-color: #0040ff !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-7,
 .cbl-skill-demo.cbl-rating-7,
 .cbl-grid-demo.cbl-rating-7 {
     background-color: #0040ff !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-8,
 .cbl-skill-demo.cbl-rating-8,
 .cbl-grid-demo.cbl-rating-8 {
     background-color: #0040ff !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-9,
 .cbl-skill-demo.cbl-rating-9,
 .cbl-grid-demo.cbl-rating-9 {
     background-color: #0040ff !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-10,
 .cbl-skill-demo.cbl-rating-10,
 .cbl-grid-demo.cbl-rating-10 {
     background-color: #0040ff !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-11,
 .cbl-skill-demo.cbl-rating-11,
 .cbl-grid-demo.cbl-rating-11 {
     background-color: #0040ff !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:141 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-colors/sass/etc/all.scss:157 */
 .cbl-level-colored.cbl-rating-12,
 .cbl-skill-demo.cbl-rating-12,
 .cbl-grid-demo.cbl-rating-12 {
     background-color: #0040ff !important;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/sass/etc/_teacher-demonstrations.scss:1 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/sass/etc/_teacher-demonstrations.scss:1 */
 .cbl-grid-progress-percent,
 .cbl-grid-progress-average {
     display: none;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/sass/etc/_student-demonstrations.scss:2 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/sass/etc/_student-demonstrations.scss:2 */
 .slate-demonstrations-student-competencycard .stats-ct {
     display: none;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/sass/etc/_student-demonstrations.scss:6 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/sass/etc/_student-demonstrations.scss:6 */
 .slate-demonstrations-student-competencycard .cbl-level-progress-label:before {
     content: 'Working toward: ';
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/sass/etc/_student-demonstrations.scss:10 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/sass/etc/_student-demonstrations.scss:10 */
 .slate-demonstrations-student-competencycard .cbl-level-progress-percent,
 .slate-demonstrations-student-competencycard .cbl-level-progress-missed {
     display: none;
 }
-/* /Users/chris/Repositories/slate-cbl/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/sass/etc/_student-demonstrations.scss:15 */
+/* /Users/chris/Repositories/slate-cbl-baxter/sencha-workspace/packages/slate-cbl-baxter/sass/etc/_student-demonstrations.scss:15 */
 .slate-demonstrations-student-competencycard .cbl-level-progress-bar {
     width: 100% !important;
 }
