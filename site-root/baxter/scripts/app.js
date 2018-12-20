@@ -624,6 +624,10 @@ function getStartYear(){
 }
 
 function getYearInt(yearSpan){
+    
+    if(!yearSpan) {
+        return 0;
+    }
   var startYear = currentYearStart - studentYear;
   var spanStartYear = yearSpan.substr(0, 4);
   var out = spanStartYear - startYear;
