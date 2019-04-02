@@ -109,6 +109,7 @@ function getCourseDivision(course){
       return 4;
     }
     if(typeof(course["Transfer"]) !== 'undefined'
+      && course["Transfer"] != null
       && course["Transfer"].length > 0){
       return 0;
     }
@@ -116,6 +117,7 @@ function getCourseDivision(course){
     return 1;
   }
   if(typeof(course["Transfer"]) !== 'undefined'
+    && course["Transfer"] != null
     && course["Transfer"].length > 0){
     return 0;
   }
