@@ -3,7 +3,7 @@ Ext.define('Baxter.cbl.override.Slider', {
 
 
     config: {
-        minRating: 1,
+        minRating: 0,
         maxRating: 6,
         menuRatings: [0]
     }
