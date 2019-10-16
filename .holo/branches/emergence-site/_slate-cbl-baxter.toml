@@ -1,5 +1,3 @@
 [holomapping]
-files = [
-    "*/**"
-]
-after = [ "slate-cbl" ]
+files = "*/**"
+after = "*"

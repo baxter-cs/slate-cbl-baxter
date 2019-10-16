@@ -1,3 +1,6 @@
 [holosource]
 url = "https://github.com/SlateFoundation/slate-cbl"
 ref = "refs/heads/releases/v3"
+
+[holosource.project]
+holobranch = "emergence-skeleton"
