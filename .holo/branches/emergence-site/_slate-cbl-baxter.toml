@@ -1,0 +1,9 @@
+[holomapping]
+files = [
+    "*/**",
+
+    # ignore all Baxter's frontend customizations for now, they'll need to be upgraded
+    "!php-config/Emergence/WebApps/SenchaApp.config.d/**",
+    "!sencha-workspace/**"
+]
+after = "*"
