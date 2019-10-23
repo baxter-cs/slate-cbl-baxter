@@ -2,16 +2,16 @@
 
 Git::$repositories['slate-cbl-baxter'] = [
     'remote' => 'git@github.com:baxter-cs/slate-cbl-baxter.git',
-    'originBranch' => 'builds/v1',
-    'workingBranch' => 'builds/v1',
+    'originBranch' => 'emergence/layer/v1',
+    'workingBranch' => 'emergence/layer/v1',
     'trees' => [
+        'html-templates/baxter',
         'php-config/Emergence/WebApps/SenchaApp.config.d/slate-cbl-baxter.php',
         'php-config/Git.config.d/slate-cbl-baxter.php',
-        'php-config/Slate/UI/UserProfile.config.d/cbl-baxter.php',
         'php-config/Slate/CBL/Demonstrations/DemonstrationSkill.config.d/baxter.php',
         'php-config/Slate/CBL/StudentCompetency.config.d',
-        'sencha-workspace/packages/slate-cbl-baxter',
+        'php-config/Slate/UI/UserProfile.config.d/cbl-baxter.php',
         'site-root/baxter',
-        'html-templates/baxter'
+        'webapp-plugin-builds/slate-cbl-baxter'
     ]
 ];
