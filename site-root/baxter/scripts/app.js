@@ -109,6 +109,7 @@ function getCourseDivision(course){
       return 4;
     }
     if(typeof(course["Transfer"]) !== 'undefined'
+      && course["Transfer"] != null
       && course["Transfer"].length > 0){
       return 0;
     }
@@ -116,6 +117,7 @@ function getCourseDivision(course){
     return 1;
   }
   if(typeof(course["Transfer"]) !== 'undefined'
+    && course["Transfer"] != null
     && course["Transfer"].length > 0){
     return 0;
   }
@@ -624,6 +626,10 @@ function getStartYear(){
 }
 
 function getYearInt(yearSpan){
+    
+    if(!yearSpan) {
+        return 0;
+    }
   var startYear = currentYearStart - studentYear;
   var spanStartYear = yearSpan.substr(0, 4);
   var out = spanStartYear - startYear;
