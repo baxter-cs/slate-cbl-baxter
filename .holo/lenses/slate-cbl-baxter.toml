@@ -1,0 +1,19 @@
+[hololens]
+package = "holo/lens-sencha-package"
+
+[hololens.sencha]
+pkg = "slate-cbl-baxter"
+
+[hololens.input]
+root = "sencha-workspace"
+files = [
+    "workspace.json",
+    "ext/",
+    "packages/slate-cbl-baxter/",
+    "packages/slate-cbl-colors/",
+    "packages/slate-theme/",
+]
+
+[hololens.output]
+root = "webapp-plugin-builds/slate-cbl-baxter"
+merge = "replace"
