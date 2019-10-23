@@ -1,7 +1,0 @@
-[submodule "sencha-workspace/extjs"]
-	path = sencha-workspace/extjs
-	url = https://github.com/JarvusInnovations/extjs.git
-[submodule "slate-cbl-colors"]
-	path = sencha-workspace/packages/slate-cbl-colors
-	url = https://github.com/SlateFoundation/slate-cbl-colors.git
-	branch = master
