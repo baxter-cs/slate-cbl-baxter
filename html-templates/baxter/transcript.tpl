@@ -48,7 +48,7 @@
                             </div>
                             <div class="indicators">
                                 <div class="header">Indicators</div>
-                                {foreach item=demoSkill from=$taskInfo.demonstrationSkills}
+                                {foreach item=demoSkill from=$taskInfo.demonstrations->Skills}
                                     <div class="indicator">
                                     <div class="description">{$demoSkill->Skill->Competency->Descriptor} >
                                      {$demoSkill->Skill->Descriptor}</div>

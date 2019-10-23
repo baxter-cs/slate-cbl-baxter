@@ -55,11 +55,14 @@ if ($_POST['submitTranscript']) {
         $section = $SectionParticipant->Section;
         if($termID == $section->Term->ID) {
             $studentTasks = StudentTask::getAllByWhere([
-                'StudentID' => $studentID,
-                'SectionID' => $SectionParticipant->Section->ID
+                'StudentID' => $studentID,                
             ]);
             $taskInfos = [];
             foreach($studentTasks as $studentTask) {
+                if($studentTask->Task->Section->ID != $section->ID){
+                    continue;
+                }
+                
                 $taskSkills = TaskSkill::getAllByWhere(['TaskID'=> $studentTask->Task->ID ]);
                 $demonstration = $studentTask->Demonstration;
                 $taskInfos[] = [
@@ -178,7 +181,7 @@ function RenderReportCard($studentID) {
                     }
 
                 }
-                /*
+                
                 if($StudentCompetency->Level < 7) {
                     $levels[$StudentCompetency->Level - 1] = [
                         'level' => $StudentCompetency->Level,
@@ -186,7 +189,7 @@ function RenderReportCard($studentID) {
                         'created' => $StudentCompetency->Created,
                         'skills' => $skills,
                       ];
-                }*/
+                }
             }
             
             $competencies[] = [
@@ -204,7 +207,7 @@ function RenderReportCard($studentID) {
         ];        
     }
     
-    /*
+    
     $sectionParticipants = SectionParticipant::getAllByWhere([
        'PersonID' => $studentID,
     ]);
@@ -215,7 +218,6 @@ function RenderReportCard($studentID) {
         if($termID == $section->Term->ID) {
             $studentTasks = StudentTask::getAllByWhere([
                 'StudentID' => $studentID,
-                'SectionID' => $SectionParticipant->Section->ID
             ]);
             $taskInfos = [];
             foreach($studentTasks as $studentTask) {
@@ -230,13 +232,15 @@ function RenderReportCard($studentID) {
             $sectionInfos[] = [
                 'title' => $section->Title,
                 'teacher' => $section->Teacher->FullName,
+                'tasks' => $taskInfos,
+
             ];
         }
 
     }
     
     
-    */
+    
 
     $student = [
         'lastName' => $Student->LastName,
@@ -244,7 +248,7 @@ function RenderReportCard($studentID) {
         'id' => $Student->ID,        
     ];
     RequestHandler::respond('baxter/reportcard', [
-      //'sections' => $sectionInfos,
+      'sections' => $sectionInfos,
       'student' => $student,
       'contentAreas' => $contentAreas,
     ]);

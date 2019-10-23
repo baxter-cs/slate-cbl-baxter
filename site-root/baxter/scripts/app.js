@@ -209,7 +209,7 @@ function verifyCourseData(data){
 
 function renderStudentInfo(data){
   var date = new Date(data["Birthdate"]);
-
+    
   var m = date.getMonth() + 1;
   var y = date.getFullYear();
   var d = date.getDate();
@@ -224,9 +224,14 @@ function renderStudentInfo(data){
   $("#studentAddress").html([data["Street Address"],data["City"],data["State"],data["Zip"]].join(" "));
   ;
   $("#studentBirthdate").html(m + "/" + d + "/" + y);
-  if( data["Graduation Date"] && false){  
-     $("#graduationDate").html("FIX THIS");
-  }
+      
+    /*  var gradDate = new Date(data["Graduation"]);
+    
+      var m = date.getMonth() + 1;
+      var y = date.getFullYear();
+      var d = date.getDate();*/
+     $("#graduationDate").html(6 + "/" + 2 + "/" + 2019);
+
   $("#studentGpa").html(parseFloat(data["GPA"]).toPrecision(2));
   $("#p2info").html($("#p1info").html());
 
@@ -271,7 +276,7 @@ function isInRightTerm(course, term){
   for(var termName in termLut){
     var termNum = termLut[termName];
 
-    if(course[termName] != "" && termNum == term ){
+    if(course[termName] != "" && course[termName] != null && termNum == term ){
       return true;
     }
   }
